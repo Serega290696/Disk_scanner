@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myProject.view.MainWindowController">
+   <children>
+      <Button fx:id="startbutton" defaultButton="true" layoutX="214.0" layoutY="457.0" mnemonicParsing="false" onAction="#startAnalysis" prefHeight="54.0" prefWidth="583.0" style="-fx-background-color: ;" text="Start analyze!">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="filepathaaa" layoutX="116.0" layoutY="42.0" prefHeight="34.0" prefWidth="400.0" promptText="Enter file path which you want to analyze" text="ttt1" />
+      <Label layoutX="14.0" layoutY="49.0" text="Enter file path:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="fileChooser" layoutX="528.0" layoutY="42.0" mnemonicParsing="false" onAction="#tt" prefHeight="34.0" prefWidth="263.0" text="Choose file....">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="9.0" layoutY="457.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Save report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ToolBar layoutX="116.0" prefHeight="40.0" prefWidth="323.0" visible="false">
+        <items>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="^ Up" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="&lt;&lt; Back" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Forward &gt;&gt;" />
+        </items>
+      </ToolBar>
+      <Slider layoutX="7.0" layoutY="443.0" prefHeight="14.0" prefWidth="194.0" />
+      <ScrollPane layoutX="13.0" layoutY="90.0" prefHeight="347.0" prefWidth="780.0">
+         <content>
+            <BarChart fx:id="mychart21" prefHeight="344.0" prefWidth="1209.0">
+               <xAxis>
+                  <CategoryAxis prefHeight="27.0" prefWidth="716.0" side="BOTTOM" fx:id="xord1">
+                     <tickLabelFont>
+                        <Font size="12.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="yord1" side="LEFT">
+                     <tickLabelFont>
+                        <Font size="12.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+               </yAxis>
+            </BarChart>
+         </content>
+      </ScrollPane>
+      <ProgressBar layoutX="324.0" layoutY="227.0" prefWidth="200.0" progress="0.0" />
+      <ToolBar prefHeight="25.0" prefWidth="806.0">
+        <items>
+          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="^Up^" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="&lt;&lt; Back" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Forward &gt;&gt;" />
+            <Button mnemonicParsing="false" text="C:\" />
+            <Button mnemonicParsing="false" text="D:\" />
+            <Button mnemonicParsing="false" text="C:\Program files" />
+        </items>
+      </ToolBar>
+   </children>
+</Pane>

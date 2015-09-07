@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX_interface.view.MenuController">
+    <tabs>
+        <Tab text="ENCRYPT">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                  <HBox layoutX="615.0" layoutY="496.0" spacing="87.0">
+                     <children>
+                              <Button fx:id="save" layoutX="603.0" layoutY="496.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Save " AnchorPane.rightAnchor="235.0" />
+                              <Button fx:id="enterE" layoutX="802.0" layoutY="496.0" mnemonicParsing="false" onAction="#enterEResult" prefHeight="30.0" prefWidth="110.0" text="Enter" />
+                     </children>
+                  </HBox>
+                  <VBox layoutX="14.0" layoutY="35.0" spacing="10.0">
+                     <children>
+                              <TextArea fx:id="eTextIn" layoutX="552.0" layoutY="93.0" prefHeight="250.0" prefWidth="550.0" promptText="Enter text " style="-fx-border-color: gray; -fx-border-radius: 13; -fx-border-width: 3; -fx-focus-color: gray; -fx-position-shape: absolute;" wrapText="true" AnchorPane.bottomAnchor="297.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="386.0" AnchorPane.topAnchor="14.0">
+                                  <cursor>
+                                      <Cursor fx:constant="TEXT" />
+                                  </cursor>
+                                  <opaqueInsets>
+                                      <Insets />
+                                  </opaqueInsets>
+                                  <padding>
+                                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                  </padding>
+                              </TextArea>
+                        <TextArea fx:id="eTextOut" editable="false" layoutX="135.0" layoutY="51.0" prefHeight="250.0" prefWidth="550.0" promptText="Get result" style="-fx-border-color: gray; -fx-border-radius: 13; -fx-border-width: 3; -fx-focus-color: gray; -fx-position-shape: absolute;" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="277.0">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="615.0" layoutY="35.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="nameFile" layoutX="615.0" layoutY="35.0" prefHeight="31.0" prefWidth="297.0" promptText="Enter file name " AnchorPane.bottomAnchor="495.0" AnchorPane.topAnchor="35.0" />
+                        <ComboBox fx:id="comboBox1" layoutX="615.0" layoutY="208.0" prefHeight="31.0" prefWidth="297.0" promptText="Enrypt  Text/File " AnchorPane.bottomAnchor="446.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="86.0" />
+                        <Button fx:id="fileChooser" disable="true" layoutX="615.0" layoutY="139.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="297.0" text="File-Chooser" AnchorPane.bottomAnchor="393.0" AnchorPane.topAnchor="137.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="615.0" layoutY="239.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="key" layoutX="615.0" layoutY="249.0" prefHeight="31.0" prefWidth="297.0" promptText="Enter key" AnchorPane.bottomAnchor="291.0" AnchorPane.topAnchor="239.0" />
+                        <Label fx:id="label" alignment="CENTER" layoutX="615.0" layoutY="296.0" prefHeight="31.0" prefWidth="297.0" text="Input some Error" AnchorPane.topAnchor="290.0" />
+                     </children>
+                  </VBox>
+                  <HBox layoutX="615.0" layoutY="188.0" spacing="18.0">
+                     <children>
+                        <ComboBox fx:id="comboBox2" layoutX="615.0" layoutY="321.0" onAction="#setEMethodChooser" prefHeight="31.0" prefWidth="160.0" promptText="Encrypt Method" style="-fx-position-shape: fixed;" AnchorPane.bottomAnchor="342.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="188.0" />
+                        <CheckBox fx:id="checkBox" layoutX="793.0" layoutY="187.0" mnemonicParsing="false" onAction="#randomKey" prefHeight="31.0" prefWidth="119.0" text="Random key" AnchorPane.topAnchor="188.0" />
+                     </children>
+                  </HBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="DECRYPT">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="1032.0">
+                    <children>
+                  <HBox layoutX="615.0" layoutY="496.0" spacing="87.0">
+                     <children>
+                              <Button layoutX="615.0" layoutY="496.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Save " AnchorPane.rightAnchor="235.0" />
+                              <Button fx:id="enterD" layoutX="802.0" layoutY="496.0" mnemonicParsing="false" onAction="#enterDResult" prefHeight="30.0" prefWidth="110.0" text="Enter" />
+                     </children>
+                  </HBox>
+                  <VBox layoutX="615.0" layoutY="239.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="dkey" layoutX="615.0" layoutY="281.0" prefHeight="31.0" prefWidth="297.0" promptText="Enter key" AnchorPane.bottomAnchor="291.0" AnchorPane.topAnchor="239.0" />
+                        <Label fx:id="label1" alignment="CENTER" layoutX="615.0" layoutY="292.0" prefHeight="31.0" prefWidth="297.0" text="Input some Error" AnchorPane.topAnchor="290.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="615.0" layoutY="35.0" spacing="20.0">
+                     <children>
+                        <VBox layoutX="615.0" layoutY="35.0" spacing="20.0">
+                           <children>
+                              <TextField layoutX="615.0" layoutY="41.0" prefHeight="31.0" prefWidth="297.0" promptText="Enter file name " AnchorPane.bottomAnchor="495.0" AnchorPane.topAnchor="35.0" />
+                              <ComboBox fx:id="comboBox11" layoutX="615.0" layoutY="87.0" prefHeight="31.0" prefWidth="297.0" promptText="Decrypt  Text/File " AnchorPane.bottomAnchor="446.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="86.0" />
+                              <Button fx:id="fileChooser1" disable="true" layoutX="615.0" layoutY="161.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="297.0" text="File-Chooser" AnchorPane.bottomAnchor="393.0" AnchorPane.topAnchor="137.0" />
+                           </children>
+                        </VBox>
+                        <HBox layoutX="615.0" layoutY="189.0" spacing="18.0">
+                           <children>
+                              <ComboBox fx:id="comboBox3" layoutX="615.0" layoutY="321.0" onAction="#setDMethodChooser" prefHeight="31.0" prefWidth="165.0" promptText="Decrypt Method" style="-fx-position-shape: fixed;" AnchorPane.bottomAnchor="342.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="188.0" />
+                              <CheckBox fx:id="checkBox1" layoutX="793.0" layoutY="187.0" mnemonicParsing="false" onAction="#randomKey" prefHeight="31.0" prefWidth="114.0" text="Use save key" AnchorPane.topAnchor="188.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="14.0" layoutY="35.0" spacing="10.0">
+                     <children>
+                        <TextArea fx:id="dTextIn" layoutX="14.0" layoutY="35.0" prefHeight="250.0" prefWidth="550.0" promptText="Enter text " style="-fx-border-color: gray; -fx-border-radius: 13; -fx-border-width: 3; -fx-focus-color: gray; -fx-position-shape: absolute;" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </TextArea>
+                        <TextArea fx:id="dTextOut" layoutX="14.0" layoutY="290.0" prefHeight="250.0" prefWidth="550.0" promptText="Enter text " style="-fx-border-color: gray; -fx-border-radius: 13; -fx-border-width: 3; -fx-focus-color: gray; -fx-position-shape: absolute;" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="log" text="Log">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab fx:id="exit" onSelectionChanged="#exitMethod" text="Exit">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
