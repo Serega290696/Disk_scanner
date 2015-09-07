@@ -23,11 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Disk space analyzer" />
+        <module name="DiskSpaceAnalyzer" />
         <module name="VovaLesson" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Disk space analyzer" target="1.8" />
+      <module name="DiskSpaceAnalyzer" target="1.8" />
       <module name="VovaLesson" target="1.8" />
     </bytecodeTargetLevel>
   </component>
