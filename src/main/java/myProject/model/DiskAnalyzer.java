@@ -33,6 +33,8 @@ public class DiskAnalyzer {
     public final int processStatusDetalization = 2;
     public int filesAmountOnLvl[] = new int[processStatusDetalization];
     public double processStatus = 0.0;
+    private StringBuilder report = new StringBuilder();
+
     public void launch() {
         launch(path);
     }
@@ -89,7 +91,7 @@ public class DiskAnalyzer {
         report();
         long otherFilesSize = 0;
         Iterator<ResultFile> iter = resultList.iterator();
-        for (int i = 0; i < MainWindowController.specialOption && iter.hasNext(); i++)
+        for (int i = 0; i < MainWindowController.maxBarsAmount && iter.hasNext(); i++)
             if (iter.hasNext()) {
                 iter.next();
             }
@@ -236,8 +238,11 @@ public class DiskAnalyzer {
     }
 
     private void report() {
-        System.out.println((chosenFile.isFile() ? "File" : "Directory") + " size: " + dataWorker.convert(chosenFileSize));
-        System.out.println("Time: " + (new Date().getTime() - bt));
+        report.append((chosenFile.isFile() ? "File" : "Directory") + " size: " + dataWorker.convert(chosenFileSize));
+        report.append("Time: " + (new Date().getTime() - bt));
+        System.out.println(report);
+//        System.out.println((chosenFile.isFile() ? "File" : "Directory") + " size: " + dataWorker.convert(chosenFileSize));
+//        System.out.println("Time: " + (new Date().getTime() - bt));
 //        System.out.println("Result length: " + resultString.length());
     }
 
@@ -269,5 +274,9 @@ public class DiskAnalyzer {
 
     public boolean isOperationDone() {
         return operationDone;
+    }
+
+    public String getReport() {
+        return new String(report);
     }
 }

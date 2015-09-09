@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/buttons_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myProject.view.MainWindowController">
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/buttons_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myProject.view.MainWindowController">
    <children>
       <TextField fx:id="filePathField" layoutX="116.0" layoutY="57.0" prefHeight="34.0" prefWidth="400.0" promptText="Enter file path which you want to analyze" text="testdir" />
       <Label layoutX="14.0" layoutY="64.0" text="Enter file path:">
@@ -15,7 +14,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="fileChooser" layoutX="528.0" layoutY="57.0" mnemonicParsing="false" onAction="#openFileChooser" prefHeight="34.0" prefWidth="157.0" styleClass="mainButton" text="Choose directory..." textFill="WHITE">
+      <Button fx:id="fileChooser" layoutX="528.0" layoutY="57.0" mnemonicParsing="false" onAction="#openDirectoryChooser" prefHeight="34.0" prefWidth="157.0" styleClass="mainButton" text="Choose directory..." textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -27,9 +26,9 @@
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Forward &gt;&gt;" />
         </items>
       </ToolBar>
-      <ScrollPane layoutX="10.0" layoutY="124.0" prefHeight="373.0" prefWidth="780.0">
+      <ScrollPane layoutX="10.0" layoutY="178.0" prefHeight="319.0" prefWidth="780.0">
          <content>
-            <BarChart fx:id="mychart" prefHeight="344.0" prefWidth="773.0">
+            <BarChart fx:id="mychart" prefHeight="312.0" prefWidth="773.0">
                <xAxis>
                   <CategoryAxis prefHeight="84.0" prefWidth="713.0" side="BOTTOM" fx:id="xord">
                      <tickLabelFont>
@@ -47,7 +46,7 @@
             </BarChart>
          </content>
       </ScrollPane>
-      <ProgressBar fx:id="progressAnalysis" layoutX="324.0" layoutY="227.0" prefWidth="200.0" progress="0.35" />
+      <ProgressBar fx:id="progressAnalysis" layoutX="324.0" layoutY="277.0" prefWidth="200.0" progress="0.31" />
       <ToolBar fx:id="toolBarMenu" prefHeight="35.0" prefWidth="800.0" styleClass="b">
         <items>
           <Button fx:id="upButton" mnemonicParsing="false" onAction="#upAction" prefHeight="25.0" prefWidth="125.0" styleClass="secondButton" text="^ Up ^" textFill="WHITE">
@@ -69,7 +68,7 @@
       </ToolBar>
       <HBox layoutX="13.0" layoutY="530.0" prefHeight="56.0" prefWidth="774.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="196.0" styleClass="secondButton" text="Save report" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#showSaveReportWindow" prefHeight="54.0" prefWidth="196.0" styleClass="secondButton" text="Save report" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -82,12 +81,36 @@
             </Button>
          </children>
       </HBox>
-      <Button layoutX="696.0" layoutY="57.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="97.0" styleClass="secondButton" text="Settings" textFill="WHITE">
+      <Button layoutX="696.0" layoutY="57.0" mnemonicParsing="false" onAction="#showSettingsWindow" prefHeight="34.0" prefWidth="97.0" styleClass="secondButton" text="Settings" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Slider fx:id="sizeControl" layoutX="526.0" layoutY="97.0" onMouseDragged="#changeSize" prefHeight="18.0" prefWidth="265.0" />
-      <Slider fx:id="amountControl" layoutX="235.0" layoutY="97.0" onMouseDragged="#changeAmount" prefHeight="18.0" prefWidth="265.0" value="100.0" />
+      <VBox layoutX="11.0" layoutY="104.0" prefHeight="68.0" prefWidth="366.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="130.0" text="Diagram size" textAlignment="RIGHT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="2.0" prefWidth="8.0" visible="false" />
+                  <Slider fx:id="sizeControl" onMouseDragged="#changeSize" prefHeight="18.0" prefWidth="200.0" value="23.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="130.0" text="Number of elements" textAlignment="RIGHT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="3.0" prefWidth="11.0" visible="false" />
+                  <Slider fx:id="amountControl" onMouseDragged="#changeAmount" prefHeight="18.0" prefWidth="200.0" value="100.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </Pane>

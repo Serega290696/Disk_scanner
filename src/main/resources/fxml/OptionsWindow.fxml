@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="471.0" stylesheets="@../css/buttons_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myProject.view.OptionWinController">
+   <children>
+      <Label layoutX="204.0" layoutY="2.0" text="SETTINGS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="6.0" layoutY="30.0" prefHeight="4.0" prefWidth="456.0" />
+      <Label layoutX="75.0" layoutY="123.0" prefHeight="20.0" prefWidth="230.0" text="Choose default folder:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="radioStartAppWithWin" layoutX="75.0" layoutY="49.0" mnemonicParsing="false" text="Start application with windows">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="radioStartAnalysisWithAppStart" layoutX="75.0" layoutY="85.0" mnemonicParsing="false" text="Start analysis after application start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="radioSaveReportsAuto" layoutX="73.0" layoutY="175.0" mnemonicParsing="false" text="Save reports automatically">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="73.0" layoutY="207.0" prefHeight="20.0" prefWidth="230.0" text="Save reports to folder:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonDefaultFolder" layoutX="319.0" layoutY="121.0" mnemonicParsing="false" styleClass="secondButton" text="Choose folder..." textFill="WHITE" />
+      <Button fx:id="defaultReportsFolder" layoutX="319.0" layoutY="205.0" mnemonicParsing="false" styleClass="secondButton" text="Choose folder..." textFill="WHITE" />
+      <HBox layoutX="246.0" layoutY="350.0" prefHeight="31.0" prefWidth="197.0">
+         <children>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelAction" prefHeight="31.0" prefWidth="80.0" styleClass="secondButton" text="Cancel" textFill="WHITE" />
+            <Separator orientation="VERTICAL" prefHeight="31.0" prefWidth="10.0" visible="false" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveAction" prefHeight="31.0" prefWidth="109.0" styleClass="mainButton" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Separator layoutX="35.0" layoutY="154.0" prefHeight="4.0" prefWidth="399.0" />
+      <Button fx:id="buttonClearCash" layoutX="72.0" layoutY="252.0" mnemonicParsing="false" onAction="#clearCashAction" prefHeight="25.0" prefWidth="348.0" styleClass="secondButton" text="Clear chash" textFill="WHITE" />
+      <Separator layoutX="35.0" layoutY="239.0" prefHeight="4.0" prefWidth="399.0" />
+   </children>
+</Pane>

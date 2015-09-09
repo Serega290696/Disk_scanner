@@ -1,26 +1,57 @@
 import org.junit.Test;
 
 import java.io.File;
+import java.util.Random;
+import java.util.function.Function;
 
 /**
  * Created by serega on 05.09.2015.
  */
 public class NewTest {
+    @Test
+    public void test2() {
+
+        Random r = new Random();
+        final int NUMBERS_AMOUNT = 100;
+        Function<Double, Double> fun = aDouble -> aDouble * aDouble;
+        int counter = 0;
+
+        double mass[][] = new double[2][NUMBERS_AMOUNT];
+        for (int i = 0; i < NUMBERS_AMOUNT; i++) {
+            mass[0][i] = r.nextDouble();
+            mass[1][i] = r.nextDouble();
+        }
+        for (int i = 0; i < NUMBERS_AMOUNT; i++) {
+            if (fun.apply(mass[0][i]) < mass[1][i])
+                counter++;
+//            mass[1][i] = fun.apply(mass[0][i]);
+        }
+        System.out.println(counter + " / " + NUMBERS_AMOUNT);
+        System.out.println((double)counter / NUMBERS_AMOUNT);
+        for (double d : mass[0]) {
+            System.out.format("%f3 ", d);
+        }
+        System.out.println();
+        for (double d : mass[1]) {
+            System.out.format("%f3 ", d);
+        }
+
+//        for(Double d : )
+    }
 
     @Test
     public void test1() {
 
 
-
-        Thread shutdownThread = new Thread(()->
-                {
-                        System.out.println("Bye");
-                }
+        Thread shutdownThread = new Thread(() ->
+        {
+            System.out.println("Bye");
+        }
         );
         Runtime.getRuntime().addShutdownHook(shutdownThread);
-String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        for(char c : str.toCharArray()) {
+        for (char c : str.toCharArray()) {
             System.out.println(c + ": " + new File(String.valueOf(c) + ":\\").length());
 
         }
