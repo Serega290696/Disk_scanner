@@ -60,19 +60,20 @@ public class MainWindowController implements Initializable {
     public ToolBar toolBarMenu;
 
 
-    private DiskAnalyzer diskAnalyzer = new DiskAnalyzer();
+    private static DiskAnalyzer diskAnalyzer = new DiskAnalyzer();
     private DataWorker dataWorker = new DataWorker();
 
     private ArrayList<File> requestHistory = new ArrayList<>();
     private int indexRequest = 0;
-    private DiskWorker diskWorker = new DiskWorker();
+    private  DiskWorker diskWorker = new DiskWorker();
     private FileWorker fileWorker = new FileWorker();
     private File reportFolder = SettingsConstants.DEFAULT_REPORTS_FOLDER_2;
     private static int reportNumber = 0;
 
-    private static Function<Double, Integer> fun1 = a -> (int) (Math.pow(a, 2d) / 100d);
+    private static Function<Double, Integer> fun1 = a -> (int) (1 + Math.pow(a, 2d) / 100d);
 
-    private static Function<Double, Integer> fun2 = a -> (int) (60d * 1 * (1d + 3d * (a / 100d)));
+    private static Function<Double, Integer> fun2 = a -> (int) (80d + diskAnalyzer.getResultList().size()*(15 + a / 100d * 400));
+    private String startButtonText = "Start analysis!";
 
     public static Stage getOptionStage() {
         return optionStage;
@@ -112,8 +113,8 @@ public class MainWindowController implements Initializable {
 //        fileChooser.setInitialDirectory(reportFolder);
         if (reportFolder.exists() && reportFolder.isDirectory()) {
             fileChooser.setInitialDirectory(reportFolder);
-            System.out.println(reportFolder.exists());
-            System.out.println(reportFolder.isDirectory());
+//            System.out.println(reportFolder.exists());
+//            System.out.println(reportFolder.isDirectory());
         }
         File file = fileChooser.showSaveDialog(null);
         if (file != null) {
@@ -132,9 +133,9 @@ public class MainWindowController implements Initializable {
         String s;
         while (new File(s = (reportFolder + "\\" + "report#" + (reportNumber) + ".txt")).exists()) {
             reportNumber++;
-            System.out.println("\n: " + reportNumber + "\n: ");
+//            System.out.println("\n: " + reportNumber + "\n: ");
         }
-        System.out.println(new File(reportFolder + "\\" + "report#" + (reportNumber) + ".txt").exists());
+//        System.out.println(new File(reportFolder + "\\" + "report#" + (reportNumber) + ".txt").exists());
         return s;
     }
 
@@ -146,7 +147,7 @@ public class MainWindowController implements Initializable {
     @FXML
     public void changeSize(Event event) {
         mychart.setPrefWidth(fun2.apply(sizeControl.getValue()));
-        System.out.println(links);
+//        System.out.println(links);
 //        System.out.println(sizeControl.getValue());
 //        System.out.println(150*mychart.getData().size());
     }
@@ -163,20 +164,30 @@ public class MainWindowController implements Initializable {
 
     @FXML
     public void startAnalysis() {
-        String startButtonText = startbutton.getText();
+        if(diskAnalyzer.isRunning())
+            diskAnalyzer.cancel();
+        startButtonText = startbutton.getText();
 //        startbutton.setText("Stop!");
         progressAnalysis.setVisible(true);
         File chosenFile = new File(filePathField.getText());
 
-//        Thread analyzerThread = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                diskAnalyzer.launch(chosenFile);
-//            }
-//        });
-        diskAnalyzer.setOperationDone(false);
-        diskAnalyzer.launch(chosenFile);
-//        analyzerThread.start();
+        diskAnalyzer = new DiskAnalyzer();
+        diskAnalyzer.setPath(filePathField.getText());
+        progressAnalysis.progressProperty().bind(diskAnalyzer.progressProperty());
+        diskAnalyzer.setOnSucceeded(event -> {
+            update();
+        });
+        diskAnalyzer.setOnCancelled(event -> {
+            System.out.println("I cancelled!");
+        });
+        progressAnalysis.setVisible(true);
+        startbutton.setText("Stop!");
+        new Thread(diskAnalyzer).start();
+    }
+
+    public void update() {
+        progressAnalysis.setVisible(false);
+        File chosenFile = new File(filePathField.getText());
 
         if (requestHistory.size() > 0) {
             if (!requestHistory.get(0).getAbsoluteFile().toString().equals(chosenFile.getAbsoluteFile().toString())) {
@@ -199,7 +210,8 @@ public class MainWindowController implements Initializable {
         mychart.getData().addAll(series1);
         if (SettingsConstants.SAVE_REPORTS_AUTOMATICALLY_4)
             saveReport();
-//        startbutton.setText(startButtonText);
+        startbutton.setText(startButtonText);
+        System.out.println(diskAnalyzer.getState());
     }
 
     @FXML
@@ -235,6 +247,7 @@ public class MainWindowController implements Initializable {
         );
     }
 
+
     private Button setUp(String fullPath) {
         File tmpFile = new File(fullPath);
         Button tmpButton;
@@ -269,7 +282,6 @@ public class MainWindowController implements Initializable {
         return tmpButton;
     }
 
-
     private ArrayList<File> links = new ArrayList<>();
 
     private String find(String s) {
@@ -290,7 +302,7 @@ public class MainWindowController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         filePathField.setText(SettingsConstants.DEFAULT_ANALYZED_FOLDER_1.getAbsolutePath());
         File chosenFile = new File(filePathField.getText());
-        progressAnalysis.setVisible(true);
+        progressAnalysis.setVisible(false);
         sizeControl.setValue(SettingsConstants.SLIDER_SIZE_5);
         amountControl.setValue(SettingsConstants.SLIDER_NUMBER_6);
         yord.setLabel("File size (bytes)");

@@ -61,7 +61,7 @@ public class OptionWinController implements Initializable {
             radioStartAppWithWin.setDisable(true);
         }
         updateSliderL();
-        System.out.println("IN CNTRL!");
+//        System.out.println("IN CNTRL!");
     }
 
     @FXML
@@ -69,7 +69,7 @@ public class OptionWinController implements Initializable {
         String tmpS = sliderSizeL.getText();
         sliderSizeL.setText(
                 tmpS.substring(0, tmpS.lastIndexOf('(') + 1) +
-                        MainWindowController.getFun2().apply(sliderSize.getValue())
+                        (int)(15 + sliderSize.getValue() / 100d * 400)
                         + ")"
         );
         tmpS = sliderNumberL.getText();
@@ -96,7 +96,7 @@ public class OptionWinController implements Initializable {
         SettingsConstants.setSliderSize5(sliderSize.getValue());
         SettingsConstants.setSliderNumber6(sliderNumber.getValue());
         SettingsConstants.setStartAppWithWindows(radioStartAppWithWin.isSelected());
-        System.out.println("::: " + radioStartAppWithWin.isSelected());
+//        System.out.println("::: " + radioStartAppWithWin.isSelected());
 
 
         MainWindowController.getOptionStage().close();

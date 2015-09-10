@@ -1,54 +1,52 @@
 package myProject.model;
 
+import javafx.concurrent.Task;
 import myProject.view.MainWindowController;
 
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
 
 /**
  * Created by serega on 02.09.2015.
  */
-public class DiskAnalyzer {
+public class DiskAnalyzer extends Task {
 
     private String path = "D:\\Downloads";
     private File chosenFile;
-    private static final String SPECIAL_CHAR = "--";
-
-
     private long chosenFileSize = 0;
-    private StringBuilder resultString = new StringBuilder();
 
     private short levelList = 1;
-    private StringBuilder lvlTab = new StringBuilder("-");
-    private long bt = new Date().getTime();
+
     private long subDirectoryOrFileSize = 0;
     private int maxLengthName;
     private final String emptyString = "                                  ";
-    private ArrayList<ResultFile> resultList = new ArrayList<ResultFile>();
+    private ArrayList<ResultFile> resultList = new ArrayList<>();
     private DataWorker dataWorker = new DataWorker();
-    private int numberDoneFiles = 0;
 
-    private volatile boolean operationDone = false;
-
-    public final int processStatusDetalization = 2;
-    public int filesAmountOnLvl[] = new int[processStatusDetalization];
+    public final int PROGRESS_SPECIFICATION = 2;
+    public int filesAmountOnLvl[] = new int[PROGRESS_SPECIFICATION];
     public double processStatus = 0.0;
+
+    private long bt = new Date().getTime();
+
+    private static final String SPECIAL_CHAR = "--";
+    private StringBuilder lvlTab = new StringBuilder("-");
+    private StringBuilder resultString = new StringBuilder();
     private StringBuilder report = new StringBuilder();
 
+    @Override
+    protected Object call() throws Exception {
+        launch();
+        return null;
+    }
     public void launch() {
         launch(path);
     }
-
-    public void launch(final String incomingParameter) {
-        launch(new File(incomingParameter));
-    }
-
-    public void setOperationDone(boolean operationDone) {
-        this.operationDone = operationDone;
-    }
-
+    public void launch(final String incomingParameter) { launch(new File(incomingParameter)); }
     public synchronized void launch(final File file) {
-//        operationDone = false;
+        System.out.println("1");
         clearAll();
         if (!file.exists()) {
             try {
@@ -63,20 +61,18 @@ public class DiskAnalyzer {
             subDirectoryOrFileSize = 0;
             fileSizeCalc(chosenFile);
             resultList.add(new ResultFile(
-//                    (f.getName().length()>10?f.getName().substring(0, 9):f.getName()) +
                     chosenFile.getName() +
                             "\n" + dataWorker.convert(subDirectoryOrFileSize, true),
                     subDirectoryOrFileSize
             ));
             report(chosenFile);
         } else {
+            processStatus = 0;
             filesAmountOnLvl[0] = chosenFile.listFiles().length;
             for (File f : chosenFile.listFiles()) {
-
                 subDirectoryOrFileSize = 0;
                 fileSizeCalc(f);
                 resultList.add(new ResultFile(
-//                    (f.getName().length()>10?f.getName().substring(0, 9):f.getName()) +
                         f.getName() +
                                 "\n" + dataWorker.convert(subDirectoryOrFileSize, true),
                         subDirectoryOrFileSize
@@ -85,9 +81,6 @@ public class DiskAnalyzer {
             }
         }
         sortList();
-        for (ResultFile f : resultList) {
-//            System.out.println(f.getName() + "\n");
-        }
         report();
         long otherFilesSize = 0;
         Iterator<ResultFile> iter = resultList.iterator();
@@ -97,61 +90,28 @@ public class DiskAnalyzer {
             }
         while (iter.hasNext()) {
             ResultFile rf = iter.next();
-//            if (rf.getFinallySize() < resultList.get(0).getFinallySize() * 0.01) {
                 iter.remove();
                 otherFilesSize += rf.getFinallySize();
-//            }
         }
         resultList.add(new ResultFile("Other\n" + dataWorker.convert(otherFilesSize, true), otherFilesSize));
-//        for(File ff : resultList) {
-//            System.out.println(ff);
-//        }
-//        System.out.println("OTHER: " + otherFilesSize + ": " + resultList.get(resultList.size() - 1).getFinallySize());
-//        if (resultList.size() > 10) {
-//            long otherFilesSize = 0;
-//            Iterator<ResultFile> iter = resultList.iterator();
-//            iter.next();
-//            iter.next();
-//            iter.next();
-//            while (iter.hasNext()) {
-//                ResultFile rf = iter.next();
-//                if (rf.getFinallySize() < resultList.get(0).getFinallySize() * 0.01) {
-//                    iter.remove();
-//                    otherFilesSize += rf.getFinallySize();
-//                }
-//            }
-//            resultList.add(new ResultFile("Other\n" + dataWorker.convert(otherFilesSize, true), otherFilesSize));
-//            System.out.println("OTHER: " + otherFilesSize + ": " + resultList.get(resultList.size()-1).getFinallySize());
-//        }
-        operationDone = true;
     }
 
     private void fileSizeCalc(final File f1) {
-//        System.out.println(f1.getName() + " : " + processStatus);
         if (f1.isFile()) {
             chosenFileSize += f1.length();
             subDirectoryOrFileSize += f1.length();
             String tmpStr = lvlTab + "" + f1.getName() + "(" + dataWorker.convert(f1.length()) + ")\t\n";
             resultString.append(tmpStr);
-            if (levelList == 1)
-                processStatus += 1d / filesAmountOnLvl[0];
-//            if (levelList == 2)
-//                processStatus += 1d / filesAmountOnLvl[1];
         } else {
+            if(levelList == 1) {
+                increase();
+            }
             if (f1.list() != null) {
                 if (f1.list().length != 0) {
                     for (File curFile : f1.listFiles()) {
                         levelUp();
                         if (levelList == 1) {
-                            filesAmountOnLvl[1] = f1.listFiles().length;
-                            processStatus += 1d / filesAmountOnLvl[0];
-//                            System.out.println(levelList);
                         }
-//                        if (levelList == 2) {
-//                            filesAmountOnLvl[1] = f1.listFiles().length;
-//                            processStatus += 1d / filesAmountOnLvl[1];
-//                            System.out.println(levelList);
-//                        }
                         fileSizeCalc(curFile);
                         levelDown();
                     }
@@ -160,7 +120,22 @@ public class DiskAnalyzer {
         }
     }
 
+    private void increase() {
+        System.out.print(processStatus + " -> ");
+        processStatus += 1d / (double)filesAmountOnLvl[0];
+        updateProgress(processStatus, 1.0);
+        System.out.println(processStatus + " :: " + filesAmountOnLvl[0] + ":" + levelList);
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
     private void clearAll() {
+        filesAmountOnLvl = new int[PROGRESS_SPECIFICATION];
+        for(int i = 0; i < PROGRESS_SPECIFICATION; i++) {
+            filesAmountOnLvl[i] = 0;
+        }
         resultList.clear();
         chosenFileSize = 0;
         resultString = new StringBuilder("");
@@ -169,7 +144,8 @@ public class DiskAnalyzer {
         bt = new Date().getTime();
         subDirectoryOrFileSize = 0;
         maxLengthName = 0;
-        numberDoneFiles = 0;
+        processStatus = 0;
+
     }
 
     private void sortList() {
@@ -177,7 +153,6 @@ public class DiskAnalyzer {
         int startIndex = 0;
         int endIndex = resultList.size() - 1;
         doSort(startIndex, endIndex);
-//        resultList.re
     }
 
     private void doSort(int start, int end) {
@@ -241,9 +216,6 @@ public class DiskAnalyzer {
         report.append((chosenFile.isFile() ? "File" : "Directory") + " size: " + dataWorker.convert(chosenFileSize));
         report.append("Time: " + (new Date().getTime() - bt));
         System.out.println(report);
-//        System.out.println((chosenFile.isFile() ? "File" : "Directory") + " size: " + dataWorker.convert(chosenFileSize));
-//        System.out.println("Time: " + (new Date().getTime() - bt));
-//        System.out.println("Result length: " + resultString.length());
     }
 
     public ArrayList<ResultFile> getResultList() {
@@ -272,11 +244,8 @@ public class DiskAnalyzer {
         lvlTab.delete(lvlTab.length() - 1 - SPECIAL_CHAR.length(), lvlTab.length() - 1);
     }
 
-    public boolean isOperationDone() {
-        return operationDone;
-    }
-
     public String getReport() {
         return new String(report);
     }
+
 }

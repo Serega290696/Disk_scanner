@@ -46,7 +46,7 @@
             </BarChart>
          </content>
       </ScrollPane>
-      <ProgressBar fx:id="progressAnalysis" layoutX="324.0" layoutY="277.0" prefWidth="200.0" progress="0.31" />
+      <ProgressBar fx:id="progressAnalysis" layoutX="324.0" layoutY="277.0" prefWidth="200.0" progress="0.0" />
       <ToolBar fx:id="toolBarMenu" prefHeight="35.0" prefWidth="800.0" styleClass="b">
         <items>
           <Button fx:id="upButton" mnemonicParsing="false" onAction="#upAction" prefHeight="25.0" prefWidth="125.0" styleClass="secondButton" text="^ Up ^" textFill="WHITE">
