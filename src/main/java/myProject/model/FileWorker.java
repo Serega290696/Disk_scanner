@@ -8,11 +8,15 @@ import java.io.*;
 public class FileWorker {
 
     public String read(String fileName) {
+        return read(new File(fileName));
+    }
+
+    public String read(File file) {
         StringBuilder sb = new StringBuilder();
         try {
             InputStreamReader in = new InputStreamReader(
                     new FileInputStream(
-                            new File(fileName)
+                            file
                     )
             );
 
@@ -22,7 +26,6 @@ public class FileWorker {
                 character = in.read();
             }
             in.close();
-            System.out.println(sb);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -32,8 +35,10 @@ public class FileWorker {
 
     public void write(File file, String dataWrite) {
         try {
-            if (!file.exists())
+            if (!file.exists()) {
+                new File(file.getAbsoluteFile().toString().substring(0, file.getAbsoluteFile().toString().lastIndexOf("\\"))).mkdirs();
                 file.createNewFile();
+            }
             OutputStreamWriter out = new OutputStreamWriter(
                     new FileOutputStream(
                             file

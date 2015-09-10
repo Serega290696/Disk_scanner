@@ -1,3 +1,4 @@
+import myProject.model.FileWorker;
 import org.junit.Test;
 
 import java.io.File;
@@ -8,6 +9,28 @@ import java.util.function.Function;
  * Created by serega on 05.09.2015.
  */
 public class NewTest {
+    @Test
+    public void test4() throws Exception {
+        FileWorker fw = new FileWorker();
+        fw.write("a.txt", "\n");//LF
+        fw.write("a.txt", "\r");//CR
+
+    }
+
+    @Test
+    public void test3() throws Exception {
+        String a = "ppp;asd;s;;ds;";
+String b[] = a.split(";");
+        b[1] = "NEW";
+String c;
+        for(String b1 : b) {
+            System.out.println(b1.length());
+            System.out.println(b1);
+
+        }
+        System.out.println(b);
+    }
+
     @Test
     public void test2() {
 

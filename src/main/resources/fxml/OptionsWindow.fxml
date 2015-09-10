@@ -5,14 +5,14 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="471.0" stylesheets="@../css/buttons_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myProject.view.OptionWinController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="471.0" stylesheets="@../css/buttons_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myProject.view.OptionWinController">
    <children>
-      <Label layoutX="204.0" layoutY="2.0" text="SETTINGS">
+      <Label layoutX="204.0" layoutY="4.0" text="SETTINGS">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Separator layoutX="6.0" layoutY="30.0" prefHeight="4.0" prefWidth="456.0" />
+      <Separator layoutX="6.0" layoutY="26.0" prefHeight="4.0" prefWidth="456.0" />
       <Label layoutX="75.0" layoutY="123.0" prefHeight="20.0" prefWidth="230.0" text="Choose default folder:">
          <font>
             <Font size="14.0" />
@@ -38,9 +38,9 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="buttonDefaultFolder" layoutX="319.0" layoutY="121.0" mnemonicParsing="false" styleClass="secondButton" text="Choose folder..." textFill="WHITE" />
-      <Button fx:id="defaultReportsFolder" layoutX="319.0" layoutY="205.0" mnemonicParsing="false" styleClass="secondButton" text="Choose folder..." textFill="WHITE" />
-      <HBox layoutX="246.0" layoutY="350.0" prefHeight="31.0" prefWidth="197.0">
+      <Button fx:id="buttonDefaultFolder" layoutX="319.0" layoutY="121.0" mnemonicParsing="false" onAction="#chooseDefAn" styleClass="secondButton" text="Choose folder..." textFill="WHITE" />
+      <Button fx:id="defaultReportsFolder" layoutX="319.0" layoutY="205.0" mnemonicParsing="false" onAction="#chooseDefRep" styleClass="secondButton" text="Choose folder..." textFill="WHITE" />
+      <HBox layoutX="246.0" layoutY="381.0" prefHeight="31.0" prefWidth="197.0">
          <children>
             <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelAction" prefHeight="31.0" prefWidth="80.0" styleClass="secondButton" text="Cancel" textFill="WHITE" />
             <Separator orientation="VERTICAL" prefHeight="31.0" prefWidth="10.0" visible="false" />
@@ -54,5 +54,29 @@
       <Separator layoutX="35.0" layoutY="154.0" prefHeight="4.0" prefWidth="399.0" />
       <Button fx:id="buttonClearCash" layoutX="72.0" layoutY="252.0" mnemonicParsing="false" onAction="#clearCashAction" prefHeight="25.0" prefWidth="348.0" styleClass="secondButton" text="Clear chash" textFill="WHITE" />
       <Separator layoutX="35.0" layoutY="239.0" prefHeight="4.0" prefWidth="399.0" />
+      <VBox layoutX="72.0" layoutY="299.0" prefHeight="62.0" prefWidth="355.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="sliderSizeL" prefHeight="20.0" prefWidth="205.0" text="Default diagram size ()">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="sliderSize" onMouseDragged="#updateSliderL" prefHeight="14.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="sliderNumberL" prefHeight="20.0" prefWidth="205.0" text="Max number of elements()">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="sliderNumber" onMouseDragged="#updateSliderL" prefHeight="14.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </Pane>
