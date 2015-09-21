@@ -15,6 +15,7 @@ public class AddToStartUp {
         String cmdCommand = "src\\main\\resources\\startupCommand\\admin_link";
         String cmdCommand2 = "dir";
         Process pr = Runtime.getRuntime().exec(new String[]{"cmd.exe","/c","start", cmdCommand});
+        isAdded = true;
 //        Process pr2 = Runtime.getRuntime().exec(new String[]{"cmd.exe","dir"});
     }
 

@@ -1,15 +1,14 @@
-
 .secondButton{
--fx-background-color:  #5DADE2;
+-fx-background-color:  #3498db;
     -fx-cursor: hand;
 }
 .mainButton{
--fx-background-color:  #34495E;
+-fx-background-color:  #2d5174;
 -fx-cursor: hand;
 }
 .secondButton:hover{
--fx-background-color:  #34495E;
+-fx-background-color:  #5dace1;
 }
 .mainButton:hover{
--fx-background-color: #14295E;
+-fx-background-color: #165492;
 }

@@ -1,153 +1,133 @@
 package myProject.model;
 
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
-/**
- * Created by serega on 09.09.2015.
- */
-public final class SettingsConstants {
+public enum SettingsConstants {
+    SETTINGS;
+    private final Logger LOGGER_SETTINGS = Logger.getLogger(SettingsConstants.class);
 
-    private static FileWorker fw = new FileWorker();
+    private HashMap<String, Object> defaultSettings = new HashMap<String, Object>() {{
+        put("DEFAULT_ANALYZED_FOLDER_1", new File("..\\").getAbsolutePath());
+        put("DEFAULT_REPORTS_FOLDER_2", new File("reports").getAbsolutePath());
+        put("START_ANALYSIS_WITH_APP_START_3", false);
+        put("SAVE_REPORTS_AUTOMATICALLY_4", false);
+        put("SLIDER_SIZE_5", 24d);
+        put("SLIDER_NUMBER_6", 100d);
+        put("START_APP_WITH_WINDOWS_7", false);
+    }};
+    public HashMap<String, Object> currentSettings = new HashMap<String, Object>() {{
+        putAll(defaultSettings);
+    }};
 
-    public static File DEFAULT_ANALYZED_FOLDER_1;
-    public static File DEFAULT_REPORTS_FOLDER_2;
-    public static boolean START_ANALYSIS_WITH_APP_START_3;
-    public static boolean SAVE_REPORTS_AUTOMATICALLY_4;
-    public static double SLIDER_SIZE_5;
-    public static double SLIDER_NUMBER_6;
-    public static boolean START_APP_WITH_WINDOWS_7;
+    {
+        System.out.println(currentSettings.values());
+        restoreSettings();
+    }
 
-    public static final String REGEX2 = "\n";
-//    public static final String REGEX1 = "***";
+    private FileWorker fw = new FileWorker();
+    public final String CONFIG_FILE = "config\\config.dat";
 
-    /*
-            ..
-            reports
-            false
-            false
-            24
-            100
-            false
-             */
-    static {
-//        System.out.println(new File("config.dat").exists());
-//        System.out.println(fw.read("config.dat").split("\n").length);
-        if (new File("config.dat").exists() && fw.read("config.dat").split(REGEX2).length == 7) {
-            String parameters[] = fw.read("config.dat").split(REGEX2);
-            DEFAULT_ANALYZED_FOLDER_1 = new File(
-                    parameters[0]
-            );
-            DEFAULT_REPORTS_FOLDER_2 = new File(
-                    parameters[1]
-            );
-            START_ANALYSIS_WITH_APP_START_3 = Boolean.parseBoolean(parameters[2]);
-            SAVE_REPORTS_AUTOMATICALLY_4 = Boolean.valueOf(parameters[3]);
-            SLIDER_SIZE_5 = Double.parseDouble(parameters[4].substring(0, parameters[4].length() - 0));
-            SLIDER_NUMBER_6 = Double.parseDouble(parameters[5].substring(0, parameters[5].length() - 0));
-            START_APP_WITH_WINDOWS_7 = Boolean.parseBoolean(parameters[6]);
-        } else {
-            System.err.println("Settings file does not exist!");
-            DEFAULT_ANALYZED_FOLDER_1 = new File("..\\");
-            DEFAULT_REPORTS_FOLDER_2 = new File("reports");
-            START_ANALYSIS_WITH_APP_START_3 = false;
-            SAVE_REPORTS_AUTOMATICALLY_4 = false;
-            SLIDER_SIZE_5 = 24;
-            SLIDER_NUMBER_6 = 100;
-            START_APP_WITH_WINDOWS_7 = false;
+    public void setDefaultAnalyzedFolder1(File DEFAULT_ANALYZED_FOLDER_1) {
+        currentSettings.put("DEFAULT_ANALYZED_FOLDER_1", DEFAULT_ANALYZED_FOLDER_1.getAbsolutePath());
+        saveSettings();
+    }
+
+    public void setDefaultReportsFolder2(File DEFAULT_REPORTS_FOLDER_2) {
+        currentSettings.put("DEFAULT_REPORTS_FOLDER_2", DEFAULT_REPORTS_FOLDER_2.getAbsolutePath());
+        saveSettings();
+    }
+
+    public void setStartAnalysisWithAppStart3(boolean START_ANALYSIS_WITH_APP_START_3) {
+        currentSettings.put("START_ANALYSIS_WITH_APP_START_3", START_ANALYSIS_WITH_APP_START_3);
+        saveSettings();
+    }
+
+    public void setSaveReportsAutomatically4(boolean SAVE_REPORTS_AUTOMATICALLY_4) {
+        currentSettings.put("SAVE_REPORTS_AUTOMATICALLY_4", SAVE_REPORTS_AUTOMATICALLY_4);
+        saveSettings();
+    }
+
+    public void setSliderSize5(double SLIDER_SIZE_5) {
+        currentSettings.put("SLIDER_SIZE_5", SLIDER_SIZE_5);
+        saveSettings();
+    }
+
+    public void setSliderNumber6(double SLIDER_NUMBER_6) {
+        currentSettings.put("SLIDER_NUMBER_6", SLIDER_NUMBER_6);
+        saveSettings();
+    }
+
+    public void setStartAppWithWindows(boolean START_APP_WITH_WINDOWS_7) throws IOException {
+        AddToStartUp util = new AddToStartUp();
+        if (!util.isAdded())
+            util.add();
+        currentSettings.put("START_APP_WITH_WINDOWS_7", START_APP_WITH_WINDOWS_7);
+        saveSettings();
+    }
+
+    public File getDEFAULT_ANALYZED_FOLDER_1() {
+        return new File((String) currentSettings.get("DEFAULT_ANALYZED_FOLDER_1"));
+    }
+
+    public File getDEFAULT_REPORTS_FOLDER_2() {
+//        return new File((String)null);
+        return new File((String) currentSettings.get("DEFAULT_REPORTS_FOLDER_2"));
+    }
+
+    public boolean isSTART_ANALYSIS_WITH_APP_START_3() {
+        return (boolean) currentSettings.get("START_ANALYSIS_WITH_APP_START_3");
+    }
+
+    public boolean isSAVE_REPORTS_AUTOMATICALLY_4() {
+        return (boolean) currentSettings.get("SAVE_REPORTS_AUTOMATICALLY_4");
+    }
+
+    public double getSLIDER_SIZE_5() {
+        return (double) currentSettings.get("SLIDER_SIZE_5");
+    }
+
+    public double getSLIDER_NUMBER_6() {
+        return (double) currentSettings.get("SLIDER_NUMBER_6");
+    }
+
+
+    public boolean isSTART_APP_WITH_WINDOWS_7() {
+        return (boolean) currentSettings.get("START_APP_WITH_WINDOWS_7");
+    }
+
+    public void saveSettings() {
+        JSONObject ob = new JSONObject(
+                new HashMap<
+                        String,
+                        HashMap<String, Object>>()
+        );
+        if (currentSettings.size() == 0) {
+            currentSettings.putAll(defaultSettings);
         }
-//        System.out.println("========== SETTINGS ==========");
-//        System.out.println(DEFAULT_ANALYZED_FOLDER_1);
-//        System.out.println(DEFAULT_REPORTS_FOLDER_2);
-//        System.out.println(START_ANALYSIS_WITH_APP_START_3);
-//        System.out.println(SAVE_REPORTS_AUTOMATICALLY_4);
-//        System.out.println(SLIDER_SIZE_5);
-//        System.out.println(SLIDER_NUMBER_6);
-//        System.out.println(START_APP_WITH_WINDOWS_7);
-//        System.out.println("==========          ==========");
-//        System.out.println(Arrays.toString(fw.read("config.dat").split(REGEX2)));
-//        System.out.println("========== SETTINGS ==========");
+        ob.put("Current_settings", currentSettings);
+        fw = new FileWorker();
+        fw.write(CONFIG_FILE, ob.toJSONString());
     }
 
-    public static void setDefaultAnalyzedFolder1(File defaultAnalyzedFolder1) {
-        DEFAULT_ANALYZED_FOLDER_1 = defaultAnalyzedFolder1;
-        String newSettings[] = fw.read("config.dat").split(REGEX2);
-        newSettings[0] = defaultAnalyzedFolder1.getAbsoluteFile().toString();
-        fw.write("config.dat",
-                combine(newSettings)
-        );
-    }
-
-    public static void setDefaultReportsFolder2(File defaultReportsFolder2) {
-        DEFAULT_REPORTS_FOLDER_2 = defaultReportsFolder2;
-        String newSettings[] = fw.read("config.dat").split(REGEX2);
-        newSettings[1] = defaultReportsFolder2.getAbsoluteFile().toString();
-        fw.write("config.dat",
-                combine(newSettings)
-        );
-    }
-
-    public static void setStartAnalysisWithAppStart3(boolean startAnalysisWithAppStart3) {
-        START_ANALYSIS_WITH_APP_START_3 = startAnalysisWithAppStart3;
-        String newSettings[] = fw.read("config.dat").split(REGEX2);
-        newSettings[2] = Boolean.toString(startAnalysisWithAppStart3);
-        fw.write("config.dat",
-                combine(newSettings)
-        );
-    }
-
-    public static void setSaveReportsAutomatically4(boolean saveReportsAutomatically4) {
-        SAVE_REPORTS_AUTOMATICALLY_4 = saveReportsAutomatically4;
-        String newSettings[] = fw.read("config.dat").split(REGEX2);
-        for(String s : newSettings) {
-            System.out.println(s);
-        }
-        newSettings[3] = Boolean.toString(saveReportsAutomatically4);
-        fw.write("config.dat",
-                combine(newSettings)
-        );
-    }
-
-    public static void setSliderSize5(double sliderSize5) {
-        SLIDER_SIZE_5 = sliderSize5;
-        String newSettings[] = fw.read("config.dat").split(REGEX2);
-        newSettings[4] = String.valueOf(sliderSize5);
-        fw.write("config.dat",
-                combine(newSettings)
-        );
-    }
-
-    public static void setSliderNumber6(double sliderNumber6) {
-        SLIDER_NUMBER_6 = sliderNumber6;
-        String newSettings[] = fw.read("config.dat").split(REGEX2);
-        newSettings[5] = String.valueOf(sliderNumber6);
-        fw.write("config.dat",
-                combine(newSettings)
-        );
-    }
-
-    public static void setStartAppWithWindows(boolean startAppWithWindows) {
+    public void restoreSettings() {
+        JSONParser parser = new JSONParser();
+        fw = new FileWorker();
         try {
-            if (START_APP_WITH_WINDOWS_7 != startAppWithWindows) {
-                START_APP_WITH_WINDOWS_7 = startAppWithWindows;
-                AddToStartUp.add();
-                String newSettings[] = fw.read("config.dat").split(REGEX2);
-                newSettings[6] = String.valueOf(startAppWithWindows);
-                fw.write("config.dat",
-                        combine(newSettings)
-                );
+            if (!new File(CONFIG_FILE).exists() || new File(CONFIG_FILE).length() == 0) {
+                System.err.println("Settings file does not exist!");
+                saveSettings();
             }
-        } catch (IOException e) {
+            JSONObject ob = (JSONObject) parser.parse(fw.read(CONFIG_FILE));
+            this.currentSettings = (HashMap<String, Object>) ob.get("Current_settings");
+        } catch (ParseException e) {
             e.printStackTrace();
         }
-    }
-
-    private static String combine(String[] newSettings) {
-        String a = "";
-        for (String t : newSettings) {
-            a += t + REGEX2;
-        }
-        System.out.println(a);
-        return a;
     }
 }

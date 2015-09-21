@@ -1,7 +1,11 @@
 import myProject.model.FileWorker;
+import myProject.model.SettingsConstants;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.*;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.function.Function;
 
@@ -9,6 +13,45 @@ import java.util.function.Function;
  * Created by serega on 05.09.2015.
  */
 public class NewTest {
+    @Test
+    public void test5() throws ParseException {
+        SettingsConstants s = SettingsConstants.SETTINGS;
+        JSONObject o = new JSONObject(new HashMap<String, SettingsConstants>());
+        o.put("S", s);
+        new FileWorker().write("AAAAAAA.txt", o.toJSONString());
+        JSONParser parser = new JSONParser();
+//        parser.parse(new FileWorker().read("AAAAAAA.txt"))
+//        SettingsConstants.SETTINGS.DEFAULT_ANALYZED_FOLDER_1 = ((SettingsConstants) parser.parse(new FileWorker().read("AAAAAAA.txt"))).DEFAULT_ANALYZED_FOLDER_1;
+//        System.out.println(SettingsConstants.SETTINGS.DEFAULT_ANALYZED_FOLDER_1);
+
+        /*
+        String s;
+        HashMap<String, String> currentSettings = new HashMap<>();
+        currentSettings.put("Serega", "19");
+        currentSettings.put("Inga", "45");
+        currentSettings.put("Milena", "14");
+        currentSettings.put("Sasha", "48");
+        s = currentSettings.get("Inga");
+        System.out.println(s);
+        Object o = (Object)new String("AAA");
+        Object o2 = true;
+        Object o3 = 5;
+        System.out.println(o);
+        System.out.println(o2);
+        System.out.println(o3);*/
+//        System.out.println((double)(new Date().getTime() - bt)/1 / f.listFiles().length);
+// 1s = 7*1000 files
+
+//        bt = new Date().getTime();
+//        f.isDirectory();
+//        System.out.println(new Date().getTime() - bt);
+//
+//        bt = new Date().getTime();
+//        f.isFile();
+//        System.out.println(new Date().getTime() - bt);
+
+    }
+
     @Test
     public void test4() throws Exception {
         FileWorker fw = new FileWorker();
@@ -20,10 +63,10 @@ public class NewTest {
     @Test
     public void test3() throws Exception {
         String a = "ppp;asd;s;;ds;";
-String b[] = a.split(";");
+        String b[] = a.split(";");
         b[1] = "NEW";
-String c;
-        for(String b1 : b) {
+        String c;
+        for (String b1 : b) {
             System.out.println(b1.length());
             System.out.println(b1);
 
@@ -50,7 +93,7 @@ String c;
 //            mass[1][i] = fun.apply(mass[0][i]);
         }
         System.out.println(counter + " / " + NUMBERS_AMOUNT);
-        System.out.println((double)counter / NUMBERS_AMOUNT);
+        System.out.println((double) counter / NUMBERS_AMOUNT);
         for (double d : mass[0]) {
             System.out.format("%f3 ", d);
         }

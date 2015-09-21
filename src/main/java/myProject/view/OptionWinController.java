@@ -10,6 +10,7 @@ import javafx.stage.DirectoryChooser;
 import myProject.model.SettingsConstants;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -44,19 +45,20 @@ public class OptionWinController implements Initializable {
     @FXML
     private Label sliderNumberL;
 
-    private File defAn = SettingsConstants.DEFAULT_ANALYZED_FOLDER_1;
-    private File defRep = SettingsConstants.DEFAULT_REPORTS_FOLDER_2;
+    private SettingsConstants SETTINGS = SettingsConstants.SETTINGS;
+    private File defAn = SETTINGS.getDEFAULT_ANALYZED_FOLDER_1();
+    private File defRep = SETTINGS.getDEFAULT_REPORTS_FOLDER_2();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        radioStartAppWithWin.setSelected(SettingsConstants.START_APP_WITH_WINDOWS_7);
-        radioStartAnalysisWithAppStart.setSelected(SettingsConstants.START_ANALYSIS_WITH_APP_START_3);
+        radioStartAppWithWin.setSelected(SETTINGS.isSTART_APP_WITH_WINDOWS_7());
+        radioStartAnalysisWithAppStart.setSelected(SETTINGS.isSTART_ANALYSIS_WITH_APP_START_3());
 
-        radioSaveReportsAuto.setSelected(SettingsConstants.SAVE_REPORTS_AUTOMATICALLY_4);
+        radioSaveReportsAuto.setSelected(SETTINGS.isSAVE_REPORTS_AUTOMATICALLY_4());
 
-        sliderSize.setValue(SettingsConstants.SLIDER_SIZE_5);
-        sliderNumber.setValue(SettingsConstants.SLIDER_NUMBER_6);
-        if (SettingsConstants.START_APP_WITH_WINDOWS_7) {
+        sliderSize.setValue(SETTINGS.getSLIDER_SIZE_5());
+        sliderNumber.setValue(SETTINGS.getSLIDER_NUMBER_6());
+        if (SETTINGS.isSTART_APP_WITH_WINDOWS_7()) {
             radioStartAppWithWin.setSelected(true);
             radioStartAppWithWin.setDisable(true);
         }
@@ -69,13 +71,13 @@ public class OptionWinController implements Initializable {
         String tmpS = sliderSizeL.getText();
         sliderSizeL.setText(
                 tmpS.substring(0, tmpS.lastIndexOf('(') + 1) +
-                        (int)(15 + sliderSize.getValue() / 100d * 400)
+                        (int) (15 + sliderSize.getValue() / 100d * 400)
                         + ")"
         );
         tmpS = sliderNumberL.getText();
         sliderNumberL.setText(
                 tmpS.substring(0, tmpS.lastIndexOf('(') + 1) +
-                        MainWindowController.getFun1().apply(sliderNumber.getValue() )
+                        MainWindowController.getFun1().apply(sliderNumber.getValue())
                         + ")"
         );
     }
@@ -91,11 +93,15 @@ public class OptionWinController implements Initializable {
 
 //        SettingsConstants.setDefaultAnalyzedFolder1(radioStartAppWithWin.isSelected());
 //        SettingsConstants.setDefaultReportsFolder2(radioStartAppWithWin.isSelected());
-        SettingsConstants.setStartAnalysisWithAppStart3(radioStartAnalysisWithAppStart.isSelected());
-        SettingsConstants.setSaveReportsAutomatically4(radioSaveReportsAuto.isSelected());
-        SettingsConstants.setSliderSize5(sliderSize.getValue());
-        SettingsConstants.setSliderNumber6(sliderNumber.getValue());
-        SettingsConstants.setStartAppWithWindows(radioStartAppWithWin.isSelected());
+        SETTINGS.setStartAnalysisWithAppStart3(radioStartAnalysisWithAppStart.isSelected());
+        SETTINGS.setSaveReportsAutomatically4(radioSaveReportsAuto.isSelected());
+        SETTINGS.setSliderSize5(sliderSize.getValue());
+        SETTINGS.setSliderNumber6(sliderNumber.getValue());
+        try {
+            SETTINGS.setStartAppWithWindows(radioStartAppWithWin.isSelected());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 //        System.out.println("::: " + radioStartAppWithWin.isSelected());
 
 
@@ -112,26 +118,26 @@ public class OptionWinController implements Initializable {
     @FXML
     public void chooseDefAn() {
         DirectoryChooser dirChooser = new DirectoryChooser();
-        if (SettingsConstants.DEFAULT_ANALYZED_FOLDER_1.exists() && SettingsConstants.DEFAULT_ANALYZED_FOLDER_1.isDirectory())
-            dirChooser.setInitialDirectory(SettingsConstants.DEFAULT_ANALYZED_FOLDER_1);
+        if (SETTINGS.getDEFAULT_ANALYZED_FOLDER_1().exists() && SETTINGS.getDEFAULT_ANALYZED_FOLDER_1().isDirectory())
+            dirChooser.setInitialDirectory(SETTINGS.getDEFAULT_ANALYZED_FOLDER_1());
         dirChooser.setTitle("Open directory");
         File file = dirChooser.showDialog(null);
         if (file != null) {
             defAn = file;
-            SettingsConstants.setDefaultAnalyzedFolder1(file);
+            SETTINGS.setDefaultAnalyzedFolder1(file);
         }
     }
 
     @FXML
     public void chooseDefRep() {
         DirectoryChooser dirChooser = new DirectoryChooser();
-        if (SettingsConstants.DEFAULT_REPORTS_FOLDER_2.exists() && SettingsConstants.DEFAULT_REPORTS_FOLDER_2.isDirectory())
-            dirChooser.setInitialDirectory(SettingsConstants.DEFAULT_REPORTS_FOLDER_2);
+        if (SETTINGS.getDEFAULT_REPORTS_FOLDER_2().exists() && SETTINGS.getDEFAULT_REPORTS_FOLDER_2().isDirectory())
+            dirChooser.setInitialDirectory(SETTINGS.getDEFAULT_REPORTS_FOLDER_2());
         dirChooser.setTitle("Open directory");
         File file = dirChooser.showDialog(null);
         if (file != null) {
             defAn = file;
-            SettingsConstants.setDefaultReportsFolder2(file);
+            SETTINGS.setDefaultReportsFolder2(file);
         }
     }
 }

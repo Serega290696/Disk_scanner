@@ -48,11 +48,13 @@ public class FileWorker {
             out.flush();
             out.close();
         } catch (IOException e) {
+            System.out.println(file.getAbsolutePath());
             e.printStackTrace();
         }
     }
 
     public void write(String fileName, String dataWrite) {
+//        System.out.println("A");
         write(new File(fileName), dataWrite);
     }
 }

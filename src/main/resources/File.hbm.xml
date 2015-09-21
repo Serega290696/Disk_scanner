@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="myProject.model.EntityFile" table="disk_structure" catalog="disk_scanner">
+
+        <id column="id_folder" name="id_folder" type="java.lang.Long">
+            <generator class="increment"/>
+        </id>
+        <property name="path" type="java.lang.String">
+            <column name="path" not-null="true" />
+        </property>
+        <property name="last_check_time" type="java.util.Date">
+            <column name="last_check_time" not-null="true" />
+        </property>
+        <property name="size" type="java.lang.Long">
+            <column name="size" not-null="true" />
+        </property>
+        <property name="last_used" type="java.sql.Date">
+            <column name="last_used" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

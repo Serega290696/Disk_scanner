@@ -1,17 +1,15 @@
 package myProject.model;
 
 import java.io.File;
+import java.io.Serializable;
 
-/**
- * Created by serega on 05.09.2015.
- */
-public class ResultFile extends File implements Comparable<File> {
+
+public class ResultFile extends File implements Comparable<File>, Serializable {
     private final long finallySize;
 
-
-    public ResultFile(String pathname, long a) {
+    public ResultFile(String pathname, long size) {
         super(pathname);
-        finallySize = a;
+        finallySize = size;
     }
 
     public long getFinallySize() {
