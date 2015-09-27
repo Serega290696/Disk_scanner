@@ -29,14 +29,22 @@
       </ToolBar>
       <ScrollPane layoutX="10.0" layoutY="178.0" prefHeight="319.0" prefWidth="780.0">
          <content>
-            <StackedBarChart fx:id="mychart" animated="false" prefHeight="298.0" prefWidth="766.0">
-              <xAxis>
-                <CategoryAxis prefHeight="65.0" prefWidth="669.0" side="BOTTOM" fx:id="xord" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis fx:id="yord" prefHeight="214.0" prefWidth="102.0" side="LEFT" />
-              </yAxis>
-            </StackedBarChart>
+            <BarChart fx:id="mychart" prefHeight="302.0" prefWidth="773.0">
+               <xAxis>
+                  <CategoryAxis prefHeight="84.0" prefWidth="713.0" side="BOTTOM" fx:id="xord">
+                     <tickLabelFont>
+                        <Font size="12.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="yord" side="LEFT">
+                     <tickLabelFont>
+                        <Font size="12.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+               </yAxis>
+            </BarChart>
          </content>
       </ScrollPane>
       <ProgressBar fx:id="progressAnalysis" layoutX="324.0" layoutY="270.0" prefHeight="25.0" prefWidth="200.0" progress="0.0" />

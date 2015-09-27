@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 
 public class ResultFile extends File implements Comparable<File>, Serializable {
-    private final long finallySize;
+    private long finallySize;
 
     public ResultFile(String pathname, long size) {
         super(pathname);
@@ -14,6 +14,14 @@ public class ResultFile extends File implements Comparable<File>, Serializable {
 
     public long getFinallySize() {
         return finallySize;
+    }
+
+    public void setFinallySize(long finallySize) {
+        this.finallySize = finallySize;
+    }
+
+    public void incFinallySize(long fSize) {
+        finallySize += fSize;
     }
 
 //    public int compareTo(ResultFile o) {

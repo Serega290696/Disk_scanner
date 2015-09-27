@@ -5,6 +5,10 @@ import myProject.view.MainWindowController;
 import org.apache.log4j.Logger;
 
 import java.io.File;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.*;
 import java.util.function.Function;
 
@@ -13,6 +17,7 @@ import java.util.function.Function;
  */
 public class DiskAnalyzer extends Task {
     private static final Logger LOGGER_SCANNER = Logger.getLogger(DiskAnalyzer.class);
+    private static final int TIME_SPAN_AMOUNT = 10;
     private String path = "D:\\Downloads";
 
     private File chosenFile;
@@ -22,37 +27,33 @@ public class DiskAnalyzer extends Task {
 
     private long subDirectoryOrFileSize = 0;
 
-    //    private int maxLengthName;
-//    private final String emptyString = "                                     ";
     private ArrayList<ResultFile> resultList = new ArrayList<>();
-    private DataWorker dataWorker = new DataWorker();
-    public final int PROGRESS_SPECIFICATION = 500;
-    public ArrayList<Integer> filesAmountOnLvl = new ArrayList<>();
 
+    private ArrayList<ResultFile[]> resultDatesList = new ArrayList<ResultFile[]>();
+    private LocalDateTime[] datesList = new LocalDateTime[7];
+
+    private DataWorker dataWorker = new DataWorker();
+
+    //    public final int PROGRESS_SPECIFICATION = 500;
+    public ArrayList<Integer> filesAmountOnLvl = new ArrayList<>();
     //    public int filesAmountOnLvl[] = new int[PROGRESS_SPECIFICATION];
     public double processStatus = 0.0;
-    private long bt = new Date().getTime();
 
+    private long bt = new Date().getTime();
     private static final String SPECIAL_CHAR = "  ";
 
     private StringBuilder lvlTab;
 
     private StringBuilder reportString = new StringBuilder();
+
     private ReportGenerator rg = new ReportGenerator();
     //    private StringBuilder report = new StringBuilder();
     private Calendar dateAnalysis = new GregorianCalendar();
     private long totalTime;
     private int dirFactor = 1;
-    private DAOFiles daoFiles = new DAOFiles();
     //    private long t1 = 0;
     private long t1 = 0;
     private long t2 = 0;
-//    private long t3 = 0;
-//    private long t4 = 0;
-//    private long t2 = new Date().getTime();
-//    private long t3 = new Date().getTime();
-//    private long t4 = new Date().getTime();
-
     public Function<Integer, Double> funProgress = x ->
     {
         long t = new Date().getTime();
@@ -64,6 +65,11 @@ public class DiskAnalyzer extends Task {
 //        System.out.println(new Date().getTime() - t);
         return y;
     };
+    private int currentFile = 0;
+
+    public DiskAnalyzer() {
+        clearAll();
+    }
 
     @Override
     public Object call() {
@@ -112,29 +118,45 @@ public class DiskAnalyzer extends Task {
             filesAmountOnLvl.add(0, calcParam(chosenFile));
             for (File f : chosenFile.listFiles()) {
                 subDirectoryOrFileSize = 0;
-//                EntityFile subDirOrFile;
-//                if ((subDirOrFile = daoFiles.get(f.getAbsolutePath())) != null) {
-//                    long fSize = subDirOrFile.getSize();
-//                    chosenFileSize += fSize;
-//                    subDirectoryOrFileSize = fSize;
-//                    String reportPattern = lvlTab + "-" + f.getName() + "(" + dataWorker.convert(fSize) + ")" + rg.getSeparator();
-//                    reportString.append(reportPattern);
-//                    increase(false);
-//                    subDirOrFile.setLast_used(new java.sql.Date(new Date().getTime()));
-//                    daoFiles.update(subDirOrFile);
-//                }
-//                else {
-                    fileSizeCalc(f);
-//                    daoFiles.insert(new EntityFile(f.getAbsolutePath(), new Date(f.lastModified()), subDirectoryOrFileSize, new java.sql.Date(new Date().getTime())));
-//                }
+                int i;
+                for (i = 0; i < datesList.length; i++) ;
+                ResultFile[] resFileMass = new ResultFile[i--];
+//                Arrays.fill(resFileMass, new ResultFile(
+//                        f.getName() + "\n" + dataWorker.convert(subDirectoryOrFileSize, true),
+//                        subDirectoryOrFileSize));
+                for (int j = 0; j < resFileMass.length; j++) {
+                    resFileMass[j] = new ResultFile(
+                            f.getName() + "\n" + dataWorker.convert(subDirectoryOrFileSize, true),
+                            subDirectoryOrFileSize);
+                }
+                resultDatesList.add(resFileMass);
+                fileSizeCalc(f);
                 resultList.add(new ResultFile(
                         f.getName() +
                                 "\n" + dataWorker.convert(subDirectoryOrFileSize, true),
                         subDirectoryOrFileSize
                 ));
+                System.out.println("============= "+currentFile+" =============");
+                for (int j = 0; j < resultDatesList.get(currentFile).length; j++) {
+                    System.out.println(resultDatesList.get(currentFile)[j] + "   S: " +
+                                    resultDatesList.get(currentFile)[j].getFinallySize()
+                    );
+                }
+                System.out.println("==========================================");
+                currentFile++;
             }
         }
-        sortList();
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("Sorting is started!");
+//        sortList(resultList);
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("Sorting is finished!");
+        if(MainWindowController.isdListIsOn()) {
+            sortList(resultDatesList);
+        } else
+            sortList();
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("Sorting dates is finished!");
         long otherFilesSize = 0;
         Iterator<ResultFile> iter = resultList.iterator();
         for (int i = 0; i < MainWindowController.maxBarsAmount && iter.hasNext(); i++)
@@ -146,13 +168,14 @@ public class DiskAnalyzer extends Task {
             iter.remove();
             otherFilesSize += rf.getFinallySize();
         }
-        resultList.add(new ResultFile("Other\n" + dataWorker.convert(otherFilesSize, true), otherFilesSize));
+        if (otherFilesSize > 0)
+            resultList.add(new ResultFile("Other\n" + dataWorker.convert(otherFilesSize, true), otherFilesSize));
         totalTime = new Date().getTime() - bt;
         if (LOGGER_SCANNER.isDebugEnabled())
             LOGGER_SCANNER.debug("Finish! File: '" + chosenFile + "'. Size: " + dataWorker.convert(chosenFileSize, true) + ". Time: " + (new Date().getTime() - bt) + "\n");
-        System.out.println(new Date().getTime() - bt);
-        System.out.println("T1 : " + t1);
-        System.out.println("T2 : " + t2);
+//        System.out.println(new Date().getTime() - bt);
+//        System.out.println("T1 : " + t1);
+//        System.out.println("T2 : " + t2);
     }
 
     private Integer calcParam2(File chosenFile) {
@@ -179,7 +202,7 @@ public class DiskAnalyzer extends Task {
             long t = new Date().getTime();
             long fSize = f1.length();
             chosenFileSize += fSize;
-            subDirectoryOrFileSize += fSize;
+            addToReList(f1, fSize);
             t2 += new Date().getTime() - t;
             String reportPattern = lvlTab + "-" + f1.getName() + "(" + dataWorker.convert(fSize) + ")" + rg.getSeparator();
             reportString.append(reportPattern);
@@ -187,6 +210,7 @@ public class DiskAnalyzer extends Task {
         } else {
             long fSize;
             fSize = f1.length();
+            addToReList(f1, fSize);
             String reportPattern = lvlTab + "-" + f1.getName() + "(" + dataWorker.convert(fSize) + ")" + rg.getSeparator();
             reportString.append(reportPattern);
 //            if (file != null) {
@@ -209,6 +233,33 @@ public class DiskAnalyzer extends Task {
                 } else increase(true);
             } else increase(true);
         }
+    }
+
+    private void addToReList(File f1, long fSize) {
+        subDirectoryOrFileSize += fSize;
+        int i = 0;
+        for (i = 0; i < datesList.length && datesList[i] != null; i++) {
+            if (new Date(f1.lastModified()).toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()
+                    .isAfter(datesList[i])) {
+//                System.out.println("HERE " + i);
+                if (i >0)
+                    i--;
+                break;
+            }
+        }
+        if (i > 6)
+            i--;
+//        System.out.println("date list: " + datesList.length);
+//        System.out.println("result date list: " + resultDatesList.size());
+//        System.out.println("file number in mass = " + i);
+//        System.out.println("rees list length = " + resultDatesList.get(currentFile).length);
+//        System.out.println("*** " + i);
+//        System.out.println(resultDatesList.get(currentFile)[0].getFinallySize());
+//        System.out.println(resultDatesList.get(currentFile)[i].getFinallySize());
+        resultDatesList.get(currentFile)[i].incFinallySize(fSize);
+//        System.out.println(resultDatesList.get(currentFile)[0].getFinallySize());
+//        System.out.println(resultDatesList.get(currentFile)[i].getFinallySize());
+//        System.out.println("***");
     }
 
     private void increase(boolean isDir) {
@@ -239,34 +290,109 @@ public class DiskAnalyzer extends Task {
 //            filesAmountOnLvl.set(i, 0);
 //        }
         resultList.clear();
+        resultDatesList.clear();
         chosenFileSize = 0;
         reportString = new StringBuilder("");
         levelList = 0;
         lvlTab = new StringBuilder(" ");
         bt = new Date().getTime();
         subDirectoryOrFileSize = 0;
-//        maxLengthName = 0;
         processStatus = 0;
+//        ListSettingsController.getDates();
+        datesList = MainWindowController.getDates();
+//        Arrays.fill(datesList, LocalDateTime.MIN);
+//        datesList[0] = LocalDateTime.now();
+//        datesList[1] = LocalDateTime.now().minusHours(1);
     }
 
     private void sortList() {
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("start");
         int startIndex = 0;
         int endIndex = resultList.size() - 1;
         doSort(startIndex, endIndex);
     }
+    private void sortList(ArrayList currentList) {
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("start");
+        int startIndex = 0;
+        int endIndex = currentList.size() - 1;
+        doSort(startIndex, endIndex, currentList);
+    }
 
-    private void doSort(int start, int end) {
+    private long calcElementSize(ResultFile[] currentList) {
+        System.out.println("CALC");
+        if(currentList.length == 0) {
+            System.err.println("List is empty!");
+            return 0;
+        }
+        long size = 0;
+        for(ResultFile f : currentList) {
+            size += f.getFinallySize();
+        }
+        return size;
+    }
+    private void doSort(int start, int end, ArrayList<ResultFile[]> currentList) {
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("do sort");
         if (start >= end)
             return;
         int i = start, j = end;
         int cur = i - (i - j) / 2;
         while (i < j) {
+            System.out.println("+1");
+            System.out.println(currentList.get(i));
+            System.out.println(currentList.get(cur));
+            System.out.println(calcElementSize(currentList.get(i)));
+            System.out.println("-1");
+            while (i < cur && (calcElementSize(currentList.get(i)) >= calcElementSize(currentList.get(cur)))) {
+                i++;
+                System.out.println(currentList.get(i));
+                System.out.println(currentList.get(cur));
+                System.out.println("12");
+            }
+            System.out.println("2");
+            while (j > cur && (calcElementSize(currentList.get(cur)) >= calcElementSize(currentList.get(j)))) {
+                j--;
+                System.out.println("22");
+            }
+            System.out.println("3");
+            if (i < j) {
+                ResultFile[] rfTmp = currentList.get(i);
+                currentList.add(i, currentList.get(j));
+                currentList.remove(i + 1);
+                currentList.add(j, rfTmp);
+                currentList.remove(j + 1);
+                if (i == cur)
+                    cur = j;
+                else if (j == cur)
+                    cur = i;
+            }
+            System.out.println("3");
+        }
+        doSort(start, cur, currentList);
+        doSort(cur + 1, end, currentList);
+    }
+    private void doSort(int start, int end) {
+        if(LOGGER_SCANNER.isDebugEnabled())
+            LOGGER_SCANNER.debug("do sort");
+        if (start >= end)
+            return;
+        int i = start, j = end;
+        int cur = i - (i - j) / 2;
+        while (i < j) {
+            System.out.println("+1");
+            System.out.println("-1");
             while (i < cur && (resultList.get(i).getFinallySize() >= resultList.get(cur).getFinallySize())) {
                 i++;
+                System.out.println("12");
             }
+            System.out.println("2");
             while (j > cur && (resultList.get(cur).getFinallySize() >= resultList.get(j).getFinallySize())) {
                 j--;
+                System.out.println("22");
             }
+            System.out.println("3");
             if (i < j) {
                 ResultFile rfTmp = resultList.get(i);
                 resultList.add(i, resultList.get(j));
@@ -278,18 +404,24 @@ public class DiskAnalyzer extends Task {
                 else if (j == cur)
                     cur = i;
             }
+            System.out.println("3");
         }
         doSort(start, cur);
         doSort(cur + 1, end);
     }
 
-
     public ArrayList<ResultFile> getResultList() {
-//        Function<Integer, Integer> fun = MainWindowController.getFun2();
-//        for (int i = 0; i < resultList.size(); i++) {
-//            fun.apply(i);
-//        }
         return resultList;
+    }
+
+
+    public ArrayList<ResultFile[]> getResultDatesList() {
+//        resultDatesList = new ArrayList<ResultFile[]>();
+//        for (int i = 0; i < resultList.size(); i++) {
+//            resultList.get(i).lastModified()
+//        }
+//        re
+        return resultDatesList;
     }
 
     public ArrayList<String> getResultListFileNames() {
@@ -346,5 +478,117 @@ public class DiskAnalyzer extends Task {
 
     public StringBuilder getReportString() {
         return reportString;
+    }
+
+    //    private long t4 = new Date().getTime();
+//    private long t3 = new Date().getTime();
+//    private long t2 = new Date().getTime();
+//    private long t4 = 0;
+//    private long t3 = 0;
+    public LocalDateTime[] getDatesList() {
+        return datesList;
+    }
+
+    public static LocalDateTime getDateOf(double value) {
+        value++;
+//        int curTimeSpan = (int) (value / TIME_SPAN_AMOUNT);
+        int curTimeSpan = (int) (value);
+        LocalDateTime now = LocalDateTime.now();
+        int years = 0;
+        int months = 0;
+        int days = 0;
+        int hours = 0;
+        int minutes = 0;
+        switch (curTimeSpan) {
+            case 0:
+                return LocalDateTime.of(
+                        LocalDate.MIN,
+                        LocalTime.MIN
+                );
+            case 1:
+                years = 5;
+                months = 0;
+                days = 0;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 2:
+                years = 3;
+                months = 0;
+                days = 0;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 3:
+                years = 2;
+                months = 0;
+                days = 0;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 4:
+                years = 1;
+                months = 0;
+                days = 0;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 5:
+                years = 0;
+                months = 6;
+                days = 0;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 6:
+                years = 0;
+                months = 1;
+                days = 0;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 7:
+                years = 0;
+                months = 0;
+                days = 7;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 8:
+                years = 0;
+                months = 0;
+                days = 1;
+                hours = 0;
+                minutes = 0;
+                break;
+            case 9:
+                years = 0;
+                months = 0;
+                days = 0;
+                hours = 1;
+                minutes = 0;
+                break;
+            case 10:
+                years = 0;
+                months = 0;
+                days = 0;
+                hours = 0;
+                minutes = 5;
+                break;
+        }
+//        return LocalDateTime.of(
+//                LocalDate.of(now.getYear() - years, now.getMonthValue() - months, now.getDayOfMonth() - days),
+//                LocalTime.of(now.getHour() - hours, now.getMinute() - minutes)
+//        );
+//        LocalDateTime.now().minusMinutes(minutes).minusHours(hours).minusDays(days).minusMonths(months).minusYears(years);
+//        LocalDateTime.now().minusHours(hours);
+//        LocalDateTime.now().minusDays(days);
+//        LocalDateTime.now().minusMonths(months).minusYears(years);
+//        LocalDateTime.now().minusYears(years);
+        return LocalDateTime.now().minusMinutes(minutes).minusHours(hours).minusDays(days).minusMonths(months).minusYears(years);
+    }
+
+    public void setDatesList(LocalDateTime[] datesList) {
+        this.datesList = datesList;
     }
 }

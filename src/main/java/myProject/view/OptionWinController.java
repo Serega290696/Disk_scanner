@@ -106,13 +106,20 @@ public class OptionWinController implements Initializable {
 
 
         MainWindowController.getOptionStage().close();
+        exit();
 //        MainWindowController.().setDisable(false);
     }
 
     @FXML
     public void cancelAction() {
         MainWindowController.getOptionStage().close();
+        exit();
 //        MainWindowController.getMainPane().setDisable(false);
+    }
+
+    private void exit() {
+        MainWindowController.setOptionStage(null);
+//        System.out.println(MainWindowController.optionStage);
     }
 
     @FXML

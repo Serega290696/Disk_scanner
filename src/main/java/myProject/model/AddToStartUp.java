@@ -7,7 +7,7 @@ import java.io.IOException;
  */
 public class AddToStartUp {
 
-    private static boolean isAdded;
+    private static boolean isAdded = SettingsConstants.SETTINGS.isSTART_APP_WITH_WINDOWS_7();
 
     public static void add() throws IOException {
 //        String cmdCommand = "Set pathBat=D:\\1.bat\n" +

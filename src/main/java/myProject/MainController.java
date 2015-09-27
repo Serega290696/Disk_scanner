@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import myProject.model.HibernateUtil;
 
 /**
  * Created by serega on 05.09.2015.
@@ -33,8 +32,6 @@ public class MainController extends Application {
         primaryStage.show();
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            System.out.println("Shutdown. Hibernate shutdown.");
-            HibernateUtil.shutdown();
         }));
     }
 

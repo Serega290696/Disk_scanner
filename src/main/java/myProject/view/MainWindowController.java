@@ -1,16 +1,20 @@
 package myProject.view;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.StackedBarChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
@@ -19,8 +23,12 @@ import myProject.model.*;
 
 import java.io.File;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.function.Function;
 
@@ -40,7 +48,7 @@ public class MainWindowController implements Initializable {
     @FXML
     public Pane mainPane;
     @FXML
-    private BarChart<String, Number> mychart;
+    private StackedBarChart<String, Number> mychart;
     @FXML
     private CategoryAxis xord;
     @FXML
@@ -62,6 +70,27 @@ public class MainWindowController implements Initializable {
     @FXML
     public Button saveReportButton;
 
+    @FXML
+    private Button changeButton;
+    @FXML
+    private Label infoButton;
+    @FXML
+    private Label tipLabel;
+    @FXML
+    private RadioButton isOnCheckBox;
+    @FXML
+    private Button onOffButton;
+    @FXML
+    public TableView tableDatesColors;
+    @FXML
+    public TableColumn<TableDataObject, String> dateColumn;
+    @FXML
+    public TableColumn<TableDataObject, String> colorColumn;
+    private ObservableList<TableDataObject> tableData = FXCollections.observableArrayList();
+
+
+    private static Stage optionStage = null;
+    private static Stage popupStage = null;
 
     private static DiskAnalyzer diskAnalyzer = new DiskAnalyzer();
     private DataWorker dataWorker = new DataWorker();
@@ -83,16 +112,69 @@ public class MainWindowController implements Initializable {
 
     private ReportGenerator rg = new ReportGenerator();
     private Thread analysisThread;
+    private static ArrayList<HBox> blocksList = initBlocksList();
+
+    private static ArrayList<HBox> initBlocksList() {
+        return new ArrayList<HBox>() {
+            {
+                HBox box = new HBox();
+                Slider slider = new Slider();
+                slider.setValue(slider.getMin());
+                box.getChildren().add(slider);
+                add(box);
+            }
+        };
+    }
+
+    public static boolean isdListIsOn() {
+        return dListIsOn;
+    }
+
+    private static boolean dListIsOn = true;
 
     public static Stage getOptionStage() {
         return optionStage;
     }
 
+    public static void setPopupStage(Stage popupStage) {
+        MainWindowController.popupStage = popupStage;
+    }
+
+    public static Stage getPopupStage() {
+        return popupStage;
+    }
+
+    public static void setOptionStage(Stage optionStage) {
+        MainWindowController.optionStage = optionStage;
+    }
+
     @FXML
-    public static Stage optionStage;
+    public void showInfo() {
+        tipLabel.setVisible(true);
+    }
+
+    @FXML
+    public void hideInfo() {
+        tipLabel.setVisible(false);
+    }
+
+    @FXML
+    public void showAllTable() {
+        tableDatesColors.setPrefHeight(250);
+        tableDatesColors.autosize();
+    }
+
+    @FXML
+    public void hideTable() {
+        tableDatesColors.setPrefHeight(62);
+        tableDatesColors.autosize();
+    }
 
     @FXML
     public void showSettingsWindow() {
+        System.out.println(optionStage);
+        if (optionStage != null)
+            return;
         try {
 //            mainPane.setDisable(true);
             mainPane.toBack();
@@ -104,10 +186,31 @@ public class MainWindowController implements Initializable {
             optionStage.setAlwaysOnTop(true);
             optionStage.setOnCloseRequest(event -> {
                 mainPane.setDisable(false);
+                optionStage = null;
 //                MainController.setPrimaryStage();
             });
 //            MainController.setPrimaryStage(settings);
             optionStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void showPopupWindow() {
+        if (popupStage != null)
+            return;
+        try {
+//            mainPane.setDisable(true);
+            mainPane.toBack();
+            popupStage = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/PopupWindow.fxml"));
+            popupStage.setScene(new Scene(root, null));
+            popupStage.setTitle("Popup");
+            popupStage.setResizable(true);
+            popupStage.setAlwaysOnTop(false);
+//            MainController.setPrimaryStage(settings);
+            popupStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -230,13 +333,42 @@ public class MainWindowController implements Initializable {
         xord.getCategories().remove(0, xord.getCategories().size() - 1);
         mychart.setPrefWidth(60d * diskAnalyzer.getResultList().size() * (1d + 3d * (sizeControl.getValue() / 100d)));
 //        mychart.setPrefWidth(MY_CHART_DEFAULT_WIDTH);
-        XYChart.Series series1 = new XYChart.Series();
-        series1.setName("Size: " + diskAnalyzer.getChosenFileSize() + " bytes = " + dataWorker.convert(diskAnalyzer.getChosenFileSize()));
-        for (ResultFile rf : diskAnalyzer.getResultList()) {
-            series1.getData().add(new XYChart.Data(rf.getName(), rf.getFinallySize()));
-        }
         mychart.getData().clear();
-        mychart.getData().addAll(series1);
+        if (dListIsOn) {
+            int i;
+            for (i = 0; i < diskAnalyzer.getResultDatesList().get(0).length; i++) ;
+            System.out.println("Length: " + i);
+            XYChart.Series series[] = {
+                    new XYChart.Series(),
+                    new XYChart.Series(),
+                    new XYChart.Series(),
+                    new XYChart.Series(),
+                    new XYChart.Series(),
+                    new XYChart.Series(),
+                    new XYChart.Series(),
+            };
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+            for (int j = 0; j < i; j++) {
+                series[j].setName("From: " + diskAnalyzer.getDatesList()[j].format(formatter));
+                for (int k = 0; k < diskAnalyzer.getResultDatesList().size(); k++) {
+                    ResultFile rf = diskAnalyzer.getResultDatesList().get(k)[j];
+                    series[j].getData().add(new XYChart.Data(rf.getName(), rf.getFinallySize()));
+                }
+//                for (ResultFile[] rf : diskAnalyzer.getResultDatesList().get(j)) {
+//                    series[j].getData().add(new XYChart.Data(rf[j].getName(), rf[j].getFinallySize()));
+//                }
+                mychart.getData().add(series[j]);
+                System.out.println(mychart.getData().get(j));
+            }
+        } else {
+            XYChart.Series series1 = new XYChart.Series();
+            series1.setName("Size: " + diskAnalyzer.getChosenFileSize() + " bytes = " + dataWorker.convert(diskAnalyzer.getChosenFileSize()));
+            for (ResultFile rf : diskAnalyzer.getResultList()) {
+                series1.getData().add(new XYChart.Data(rf.getName(), rf.getFinallySize()));
+            }
+            mychart.getData().addAll(series1);
+        }
+
         if (SETTINGS.isSAVE_REPORTS_AUTOMATICALLY_4()) {
             rg.setReportFolder(new File(reportFolder.getAbsolutePath() + "\\report"));
             rg.saveReport(diskAnalyzer, true);
@@ -336,14 +468,79 @@ public class MainWindowController implements Initializable {
                 .stream()
                 .forEach((d) -> setUp(d, false)
                 );
-//        Thread analysisThread = new Thread(() -> {
-        //
-//        });
-//        analysisThread.setPriority(Thread.MIN_PRIORITY);
-//        analysisThread.start();
+//        final String tip = "If you want to see";
+//        final String tip = "Если у Вас выбран один временной отрезок, то будут отображаться диаграммы только оранжевого цвета. " +
+//                "Если Вы выбирите дополнительные временные отрезки, то часть диаграммы изменить цвет на другой. " +
+//                "Каждому временому отрезку соответствует свой цвет. " +
+//                "Это означает что файлы были созданы (модифицированы) в данном временом отрезке.";
+        final String tip = "If you have selected only one time interval, the chart painted only orange.\n" +
+                "If you add new time interval, part of the chart changes the color to another.\n" +
+                "Each time interval painted to different colors.\n" +
+                "This means that the files were created (modified) in a given time interval.";
+
+        tipLabel.setText(tip);
+        infoButton.setTooltip(new Tooltip(tip));
+
+        initTable();
         if (SETTINGS.isSTART_ANALYSIS_WITH_APP_START_3())
             startAnalysis();
-//        startAnalysis();
+    }
+
+    @FXML
+    private void onOffDList() {
+        dListIsOn = !dListIsOn;
+        changeButton.setDisable(!dListIsOn);
+        infoButton.setDisable(!dListIsOn);
+        isOnCheckBox.setDisable(!dListIsOn);
+        tableDatesColors.setDisable(!dListIsOn);
+        isOnCheckBox.setSelected(dListIsOn);
+        if (dListIsOn) {
+            onOffButton.setText("   On");
+            onOffButton.setStyle("-fx-background-color: darkgreen;");
+            onOffButton.applyCss();
+        } else {
+            onOffButton.setText("   Off");
+            onOffButton.setStyle("-fx-background-color: darkred;");
+            onOffButton.applyCss();
+        }
+    }
+
+    private void initTable() {
+        dateColumn.setCellValueFactory(new PropertyValueFactory<TableDataObject, String>("dateString"));
+        colorColumn.setCellValueFactory(new PropertyValueFactory<TableDataObject, String>("colorString"));
+
+//        TableDataObject t = new TableDataObject();
+//        t.setDateString("ddd");
+//        t.setColorString("ccc");
+//        tableData.add(t);
+        String[] colorMass = {"orange", "yellow", "blue", "blue", "blue", "blue", "blue"};
+        TableDataObject tFirst = new TableDataObject();
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        System.out.println("A "+diskAnalyzer.getDatesList()[0]);
+        tFirst.setDateString((diskAnalyzer.getDatesList()[0]).format(formatter) +
+                " - " +
+                LocalDateTime.now().format(formatter));
+        tFirst.setColorString(colorMass[0]);
+        tableData.add(tFirst);
+        for (int i = 1; i < diskAnalyzer.getDatesList().length; i++) {
+            TableDataObject t = new TableDataObject();
+            t.setDateString((diskAnalyzer.getDatesList()[i]).format(formatter) +
+                    " - " +
+                    diskAnalyzer.getDatesList()[i - 1].format(formatter));
+            t.setColorString(colorMass[i]);
+            tableData.add(t);
+        }
+        new File("").lastModified();
+
+        Date date = new Date();
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime dateTime = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+
+
+        System.out.println(tFirst.getDateString());
+        tableDatesColors.setItems(tableData);
+
     }
 
     public static Function<Double, Integer> getFun1() {
@@ -352,5 +549,26 @@ public class MainWindowController implements Initializable {
 
     public static Function<Integer, Integer> getFun2() {
         return fun2;
+    }
+
+
+    public static void setBlocksList(ArrayList<HBox> l) {
+        blocksList = l;
+    }
+
+    public static LocalDateTime[] getDates() {
+        if(blocksList == null) {
+            blocksList = initBlocksList();
+        }
+        System.out.println(blocksList);
+        LocalDateTime list[] = new LocalDateTime[blocksList.size()];
+        for (int i = 0; i < blocksList.size(); i++) {
+            HBox box = blocksList.get(i);
+            list[i] =
+                    DiskAnalyzer.getDateOf(
+                            ((Slider) box.getChildren().get(0)).getValue()
+                    );
+        }
+        return list;
     }
 }
