@@ -2,7 +2,7 @@ import myProject.view.MainWindowController;
 import org.junit.Test;
 
 /**
- * Created by serega on 08.09.2015.
+ * Created by serega.
  */
 public class TestJavaFx {
 

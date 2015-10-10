@@ -7,14 +7,13 @@ import java.util.LinkedHashSet;
 import java.util.List;
 
 /**
- * Created by serega on 07.09.2015.
+ * Created by serega.
  */
 public class DiskWorker {
 
     private final static List<String> finalList = Collections.unmodifiableList(new ArrayList<String>(){{
         add("C:\\Program Files");
         add("C:\\Program Files (x86)");
-//        add("C:\\Documents and Settings");
         add("C:\\Users");
     }});
 
@@ -26,7 +25,7 @@ public class DiskWorker {
             if(tmpFile.exists())
                 linkedSetList.add(fname);
         }
-        return linkedSetList.<String>toArray(new String[2]);
+        return linkedSetList.toArray(new String[2]);
     }
 
     private LinkedHashSet<String> getDisks() {
@@ -43,7 +42,7 @@ public class DiskWorker {
         return getDisks().stream()
                 .anyMatch(
                         (d) ->
-            tmpFile.getAbsoluteFile().toString().equals(d.toString())
+            tmpFile.getAbsoluteFile().toString().equals(d)
         );
     }
 }

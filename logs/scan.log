@@ -1,0 +1,1535 @@
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43598481564956487 -> 0.5788419585067077. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4359866215903878 -> 0.5788437644475306. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43598752456079926 -> 0.5788446674179422. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4359884275312107 -> 0.5788455703883535. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43598933050162214 -> 0.578846473358765. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4359902334720336 -> 0.5788473763291764. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43599143743258223 -> 0.5788485802897251. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4359926413931309 -> 0.5788497842502738. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4359938453536795 -> 0.5788509882108224. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43599504931422817 -> 0.578852192171371. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4359962532747768 -> 0.5788533961319197. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43599745723532546 -> 0.5788546000924684. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43600106911697134 -> 0.5788582119741141. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4360028750577943 -> 0.5788600179149371. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4360046809986172 -> 0.5788618238557601. Files amount: 206. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4360082928802631 -> 0.5788654357374059. Files amount: 206. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.436011904761909 -> 0.5788690476190519. Files amount: 12. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4367559523809566 -> 0.5796130952380995. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43681795634921056 -> 0.5796750992063534. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4368799603174645 -> 0.5797371031746074. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43694196428571846 -> 0.5797991071428613. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4370039682539724 -> 0.5798611111111153. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4370659722222264 -> 0.5799231150793692. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4371279761904803 -> 0.5799851190476232. Files amount: 4. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43731398809524225 -> 0.5801711309523852. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.43750000000000416 -> 0.580357142857147. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4464285714285756 -> 0.5892857142857184. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.45535714285714707 -> 0.5982142857142899. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4561688311688354 -> 0.5990259740259782. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4569805194805237 -> 0.5998376623376666. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.457792207792212 -> 0.6006493506493549. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.45860389610390034 -> 0.6014610389610432. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4590097402597445 -> 0.6018668831168874. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.45941558441558866 -> 0.6022727272727315. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.45950577200577625 -> 0.602362914862919. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.45959595959596383 -> 0.6024531024531067. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4596861471861514 -> 0.6025432900432943. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.459776334776339 -> 0.6026334776334819. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4598665223665266 -> 0.6027236652236694. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.45995670995671417 -> 0.602813852813857. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.46004689754690176 -> 0.6029040404040447. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.46013708513708934 -> 0.6029942279942322. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4602272727272769 -> 0.6030844155844197. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.46103896103896524 -> 0.6038961038961081. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.46185064935065356 -> 0.6047077922077964. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4626623376623419 -> 0.6055194805194848. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4634740259740302 -> 0.606331168831173. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4642857142857185 -> 0.6071428571428614. Files amount: 1. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.47321428571429 -> 0.6160714285714328. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4821428571428614 -> 0.6250000000000042. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4843750000000043 -> 0.6272321428571471. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4866071428571471 -> 0.62946428571429. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.48883928571429 -> 0.6316964285714328. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4910714285714328 -> 0.6339285714285756. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49196428571428996 -> 0.6348214285714329. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.492261904761909 -> 0.6351190476190518. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49255952380952805 -> 0.635416666666671. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4928571428571471 -> 0.6357142857142899. Files amount: 5. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4946428571428614 -> 0.6375000000000042. Files amount: 5. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49642857142857566 -> 0.6392857142857185. Files amount: 3. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49702380952381375 -> 0.6398809523809565. Files amount: 3. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49761904761905185 -> 0.6404761904761946. Files amount: 3. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49821428571428994 -> 0.6410714285714327. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4986607142857185 -> 0.6415178571428614. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4988839285714328 -> 0.6417410714285756. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49910714285714713 -> 0.64196428571429. Files amount: 4. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.4995535714285757 -> 0.6424107142857185. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49970238095238523 -> 0.6425595238095281. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.49985119047619475 -> 0.6427083333333377. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5000000000000043 -> 0.6428571428571472. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5089285714285757 -> 0.6517857142857186. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5178571428571471 -> 0.66071428571429. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5267857142857185 -> 0.6696428571428614. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5275974025974068 -> 0.6704545454545496. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5284090909090952 -> 0.6712662337662381. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5292207792207835 -> 0.6720779220779263. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5300324675324718 -> 0.6728896103896147. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5308441558441601 -> 0.6737012987013029. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5316558441558484 -> 0.6745129870129913. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5324675324675368 -> 0.6753246753246795. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5332792207792251 -> 0.676136363636368. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5340909090909134 -> 0.6769480519480562. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5349025974026017 -> 0.6777597402597446. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.53571428571429 -> 0.6785714285714328. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5367063492063535 -> 0.6795634920634963. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.537698412698417 -> 0.6805555555555598. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5386904761904805 -> 0.6815476190476233. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.539682539682544 -> 0.6825396825396868. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5406746031746075 -> 0.6835317460317503. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.541666666666671 -> 0.6845238095238138. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5426587301587344 -> 0.6855158730158772. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5436507936507979 -> 0.6865079365079407. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5446428571428614 -> 0.6875000000000042. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5457589285714328 -> 0.6886160714285756. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5461309523809567 -> 0.6889880952380996. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.546168154761909 -> 0.6890252976190518. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5462053571428614 -> 0.6890625000000044. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5462425595238138 -> 0.6890997023809566. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5462797619047662 -> 0.6891369047619091. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5463169642857186 -> 0.6891741071428614. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.546354166666671 -> 0.6892113095238139. Files amount: 1. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5463913690476234 -> 0.6892485119047662. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5464285714285758 -> 0.6892857142857187. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5464657738095282 -> 0.689322916666671. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5465029761904806 -> 0.6893601190476235. Files amount: 2. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5466889880952425 -> 0.6895461309523854. Files amount: 2. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5468750000000043 -> 0.6897321428571472. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.54743303571429 -> 0.6902901785714328. Files amount: 2. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5477120535714329 -> 0.6905691964285758. Files amount: 2. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5479910714285758 -> 0.6908482142857186. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5485491071428615 -> 0.6914062500000044. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5487351190476234 -> 0.6915922619047663. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5489211309523853 -> 0.6917782738095282. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5491071428571471 -> 0.69196428571429. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5496031746031789 -> 0.6924603174603217. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5500992063492106 -> 0.6929563492063535. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5505952380952424 -> 0.6934523809523852. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5510912698412741 -> 0.693948412698417. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5515873015873058 -> 0.6944444444444486. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5520833333333376 -> 0.6949404761904805. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5525793650793693 -> 0.6954365079365121. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5530753968254011 -> 0.695932539682544. Files amount: 9. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5535714285714328 -> 0.6964285714285756. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5538903061224533 -> 0.6967474489795962. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5539434523809567 -> 0.6968005952380996. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.55399659863946 -> 0.696853741496603. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5540497448979634 -> 0.6969068877551063. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5541028911564668 -> 0.6969600340136097. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5541560374149702 -> 0.6970131802721131. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5542091836734736 -> 0.6970663265306165. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.554528061224494 -> 0.6973852040816368. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5546343537415008 -> 0.6974914965986436. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5547406462585076 -> 0.6975977891156504. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5547539328231335 -> 0.6976110756802762. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5547672193877593 -> 0.6976243622449021. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5547805059523852 -> 0.6976376488095279. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.554793792517011 -> 0.6976509353741538. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5548070790816368 -> 0.6976642219387796. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5548203656462627 -> 0.6976775085034055. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5548336522108885 -> 0.6976907950680313. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5548469387755144 -> 0.6977040816326572. Files amount: 7. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5551658163265348 -> 0.6980229591836777. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5552721088435416 -> 0.6981292517006845. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.555279701166185 -> 0.6981368440233278. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5552872934888283 -> 0.6981444363459712. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5552948858114717 -> 0.6981520286686145. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.555302478134115 -> 0.698159620991258. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553100704567584 -> 0.6981672133139012. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553176627794018 -> 0.6981748056365447. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553252551020451 -> 0.6981823979591879. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553328474246885 -> 0.6981899902818314. Files amount: 1. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553404397473318 -> 0.6981975826044746. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553480320699752 -> 0.6982051749271181. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553556243926185 -> 0.6982127672497613. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553632167152619 -> 0.6982203595724048. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553708090379053 -> 0.698227951895048. Files amount: 14. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5553784013605486 -> 0.6982355442176915. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5554138321995509 -> 0.6982709750566938. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5554492630385531 -> 0.698306405895696. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5554846938775554 -> 0.6983418367346983. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5555909863945622 -> 0.6984481292517051. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.555697278911569 -> 0.6985544217687119. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5558035714285757 -> 0.6986607142857186. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5580357142857186 -> 0.7008928571428614. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5602678571428615 -> 0.7031250000000044. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5605158730158775 -> 0.7033730158730203. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5607638888888934 -> 0.7036210317460363. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5610119047619093 -> 0.7038690476190521. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5612599206349252 -> 0.7041170634920682. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5615079365079412 -> 0.704365079365084. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5617559523809571 -> 0.7046130952381. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.562003968253973 -> 0.7048611111111158. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.562251984126989 -> 0.7051091269841319. Files amount: 9. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.5625000000000049 -> 0.7053571428571477. Files amount: 16. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   DEBUG DiskAnalyzer: Process status: 0.5714285714285763 -> 0.7142857142857191. Files amount: 7. Cur lvl list: 0
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7142857142857191 -> 0.8571428571428619. Files amount: 8. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7156593406593454 -> 0.8585164835164882. Files amount: 8. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7170329670329718 -> 0.8598901098901146. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7184065934065982 -> 0.861263736263741. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.718487394957988 -> 0.8613445378151308. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7185681965093778 -> 0.8614253393665205. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7186489980607675 -> 0.8615061409179103. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7187297996121573 -> 0.8615869424693001. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7188106011635471 -> 0.8616677440206899. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7188914027149369 -> 0.8617485455720797. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7189722042663267 -> 0.8618293471234695. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7190530058177165 -> 0.8619101486748593. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7191338073691063 -> 0.861990950226249. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.719214608920496 -> 0.8620717517776388. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7192954104718858 -> 0.8621525533290286. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7193762120232756 -> 0.8622333548804184. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7194570135746654 -> 0.8623141564318082. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7195378151260552 -> 0.862394957983198. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.719618616677445 -> 0.8624757595345878. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7196994182288348 -> 0.8625565610859776. Files amount: 17. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7197802197802246 -> 0.8626373626373673. Files amount: 8. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7211538461538509 -> 0.8640109890109937. Files amount: 8. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7225274725274773 -> 0.8653846153846201. Files amount: 8. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7239010989011037 -> 0.8667582417582465. Files amount: 8. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.72527472527473 -> 0.8681318681318728. Files amount: 1. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.736263736263741 -> 0.8791208791208838. Files amount: 13. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7472527472527519 -> 0.8901098901098947. Files amount: 13. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7582417582417629 -> 0.9010989010989057. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7609890109890156 -> 0.9038461538461584. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7637362637362684 -> 0.9065934065934111. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7664835164835211 -> 0.9093406593406639. Files amount: 4. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7692307692307738 -> 0.9120879120879166. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7703296703296749 -> 0.9131868131868177. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7706959706959753 -> 0.9135531135531181. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7710622710622757 -> 0.9139194139194184. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.771428571428576 -> 0.9142857142857188. Files amount: 5. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7736263736263782 -> 0.916483516483521. Files amount: 5. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7758241758241804 -> 0.9186813186813232. Files amount: 3. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7765567765567811 -> 0.9194139194139239. Files amount: 3. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7772893772893819 -> 0.9201465201465246. Files amount: 3. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7780219780219826 -> 0.9208791208791254. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7785714285714331 -> 0.9214285714285759. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7788461538461584 -> 0.9217032967033012. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7791208791208837 -> 0.9219780219780265. Files amount: 4. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7796703296703342 -> 0.922527472527477. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7798534798534844 -> 0.9227106227106272. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7800366300366346 -> 0.9228937728937774. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7802197802197848 -> 0.9230769230769276. Files amount: 13. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.7912087912087957 -> 0.9340659340659385. Files amount: 13. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8021978021978067 -> 0.9450549450549495. Files amount: 13. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8131868131868176 -> 0.9560439560439604. Files amount: 1. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8241758241758286 -> 0.9670329670329714. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8255494505494549 -> 0.9684065934065977. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8260073260073304 -> 0.9688644688644732. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.826053113553118 -> 0.9689102564102607. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8260989010989055 -> 0.9689560439560483. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.826144688644693 -> 0.9690018315018358. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8261904761904806 -> 0.9690476190476234. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8262362637362681 -> 0.9690934065934109. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8262820512820557 -> 0.9691391941391985. Files amount: 1. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8263278388278432 -> 0.969184981684986. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8263736263736308 -> 0.9692307692307736. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8264194139194183 -> 0.9692765567765611. Files amount: 10. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8264652014652059 -> 0.9693223443223487. Files amount: 2. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8266941391941436 -> 0.9695512820512864. Files amount: 2. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8269230769230813 -> 0.9697802197802241. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8276098901098945 -> 0.9704670329670373. Files amount: 2. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8279532967033011 -> 0.970810439560444. Files amount: 2. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8282967032967077 -> 0.9711538461538505. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8289835164835209 -> 0.9718406593406637. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8292124542124586 -> 0.9720695970696014. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8294413919413963 -> 0.9722985347985391. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.829670329670334 -> 0.9725274725274768. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8303571428571472 -> 0.97321428571429. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8310439560439604 -> 0.9739010989011032. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8317307692307736 -> 0.9745879120879164. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8324175824175868 -> 0.9752747252747296. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8331043956044 -> 0.9759615384615428. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8337912087912132 -> 0.976648351648356. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8344780219780263 -> 0.9773351648351691. Files amount: 8. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8351648351648395 -> 0.9780219780219823. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8357142857142901 -> 0.9785714285714329. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8359890109890153 -> 0.9788461538461581. Files amount: 2. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8362637362637406 -> 0.9791208791208834. Files amount: 5. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8368131868131912 -> 0.979670329670334. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8369963369963414 -> 0.9798534798534841. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8370104254719682 -> 0.9798675683291111. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8370245139475951 -> 0.9798816568047379. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.837038602423222 -> 0.9798957452803649. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8370526908988489 -> 0.9799098337559917. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8370667793744758 -> 0.9799239222316187. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8370808678501027 -> 0.9799380107072455. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8370949563257296 -> 0.9799520991828725. Files amount: 1. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8371090448013565 -> 0.9799661876584993. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8371231332769834 -> 0.9799802761341263. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8371372217526103 -> 0.9799943646097531. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8371513102282372 -> 0.9800084530853801. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8371653987038641 -> 0.9800225415610069. Files amount: 13. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.837179487179491 -> 0.9800366300366339. Files amount: 2. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8372710622710661 -> 0.980128205128209. Files amount: 2. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8373626373626412 -> 0.9802197802197841. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8375457875457913 -> 0.9804029304029342. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8377289377289415 -> 0.9805860805860844. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8379120879120917 -> 0.9807692307692346. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8406593406593444 -> 0.9835164835164873. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8434065934065972 -> 0.9862637362637401. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8437500000000038 -> 0.9866071428571466. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8440934065934104 -> 0.9869505494505533. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.844436813186817 -> 0.9872939560439598. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8447802197802236 -> 0.9876373626373665. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8451236263736301 -> 0.9879807692307729. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8454670329670367 -> 0.9883241758241796. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8458104395604433 -> 0.9886675824175861. Files amount: 8. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8461538461538499 -> 0.9890109890109928. Files amount: 13. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8571428571428609 -> 1.0000000000000038. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.859307359307363 -> 1.0021645021645058. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8603896103896141 -> 1.003246753246757. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8614718614718653 -> 1.004329004329008. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8636363636363674 -> 1.0064935064935103. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8658008658008696 -> 1.0086580086580124. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8668831168831207 -> 1.0097402597402636. Files amount: 2. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8679653679653718 -> 1.0108225108225146. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8680856180856219 -> 1.0109427609427648. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.868205868205872 -> 1.0110630110630148. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.868326118326122 -> 1.011183261183265. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8684463684463721 -> 1.011303511303515. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8685666185666222 -> 1.011423761423765. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8686868686868723 -> 1.011544011544015. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8688071188071224 -> 1.0116642616642653. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8689273689273724 -> 1.0117845117845152. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8690476190476225 -> 1.0119047619047654. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8691678691678726 -> 1.0120250120250154. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8692881192881227 -> 1.0121452621452656. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8694083694083727 -> 1.0122655122655155. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8695286195286228 -> 1.0123857623857657. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8696488696488729 -> 1.0125060125060157. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.869769119769123 -> 1.0126262626262659. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.869889369889373 -> 1.0127465127465158. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8700096200096231 -> 1.012866762866766. Files amount: 18. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8701298701298732 -> 1.012987012987016. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8722943722943753 -> 1.0151515151515182. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8744588744588775 -> 1.0173160173160203. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8766233766233796 -> 1.0194805194805225. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8787878787878818 -> 1.0216450216450246. Files amount: 11. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8809523809523839 -> 1.0238095238095268. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8835978835978866 -> 1.0264550264550294. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8862433862433893 -> 1.0291005291005322. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.888888888888892 -> 1.0317460317460347. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8915343915343946 -> 1.0343915343915375. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8941798941798973 -> 1.03703703703704. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8968253968254 -> 1.0396825396825429. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.8994708994709026 -> 1.0423280423280454. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9021164021164053 -> 1.0449735449735482. Files amount: 9. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.904761904761908 -> 1.0476190476190508. Files amount: 6. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9285714285714318 -> 1.0714285714285747. Files amount: 6. Cur lvl list: 1
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9523809523809557 -> 1.0952380952380985. Files amount: 6. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9527116402116435 -> 1.0955687830687864. Files amount: 6. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9530423280423312 -> 1.095899470899474. Files amount: 6. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.953373015873019 -> 1.096230158730162. Files amount: 6. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9537037037037068 -> 1.0965608465608496. Files amount: 1. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9540343915343946 -> 1.0968915343915375. Files amount: 6. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9543650793650824 -> 1.0972222222222252. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9550264550264581 -> 1.097883597883601. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9556878306878338 -> 1.0985449735449766. Files amount: 3. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9563492063492095 -> 1.0992063492063524. Files amount: 4. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9568452380952412 -> 1.099702380952384. Files amount: 1. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.957341269841273 -> 1.100198412698416. Files amount: 4. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9578373015873047 -> 1.1006944444444475. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9579613095238126 -> 1.1008184523809554. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9580853174603206 -> 1.1009424603174633. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9582093253968285 -> 1.1010664682539713. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9583333333333364 -> 1.1011904761904792. Files amount: 4. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9598214285714316 -> 1.1026785714285745. Files amount: 4. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9613095238095268 -> 1.1041666666666696. Files amount: 4. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9627976190476221 -> 1.105654761904765. Files amount: 4. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9642857142857173 -> 1.10714285714286. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9761904761904792 -> 1.119047619047622. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9763888888888919 -> 1.1192460317460347. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9765873015873046 -> 1.1194444444444474. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9767857142857173 -> 1.11964285714286. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.97698412698413 -> 1.1198412698412727. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9771825396825427 -> 1.1200396825396854. Files amount: 6. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9773809523809553 -> 1.1202380952380981. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9777777777777807 -> 1.1206349206349235. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9781746031746061 -> 1.121031746031749. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9785714285714315 -> 1.1214285714285743. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9788690476190506 -> 1.1217261904761935. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9791666666666696 -> 1.1220238095238124. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9794642857142887 -> 1.1223214285714316. Files amount: 4. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9797619047619077 -> 1.1226190476190505. Files amount: 3. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9801587301587331 -> 1.123015873015876. Files amount: 1. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9805555555555585 -> 1.1234126984127013. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9806051587301617 -> 1.1234623015873046. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.980654761904765 -> 1.1235119047619078. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9807043650793682 -> 1.123561507936511. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9807539682539714 -> 1.1236111111111142. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9808035714285747 -> 1.1236607142857176. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9808531746031779 -> 1.1237103174603207. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9809027777777811 -> 1.123759920634924. Files amount: 8. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9809523809523844 -> 1.1238095238095271. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9857142857142891 -> 1.128571428571432. Files amount: 1. Cur lvl list: 3
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9904761904761938 -> 1.1333333333333366. Files amount: 1. Cur lvl list: 4
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9928571428571462 -> 1.135714285714289. Files amount: 6. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9929067460317494 -> 1.1357638888888923. Files amount: 6. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9929563492063527 -> 1.1358134920634955. Files amount: 6. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9930059523809559 -> 1.1358630952380988. Files amount: 6. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9930555555555591 -> 1.135912698412702. Files amount: 1. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9931051587301624 -> 1.1359623015873053. Files amount: 6. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9931547619047656 -> 1.1360119047619084. Files amount: 3. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9932539682539719 -> 1.1361111111111148. Files amount: 3. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9933531746031783 -> 1.136210317460321. Files amount: 3. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9934523809523846 -> 1.1363095238095275. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9935267857142894 -> 1.1363839285714323. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9936011904761942 -> 1.1364583333333371. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.993675595238099 -> 1.136532738095242. Files amount: 4. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9937500000000038 -> 1.1366071428571467. Files amount: 3. Cur lvl list: 6
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9938492063492101 -> 1.136706349206353. Files amount: 1. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9939484126984165 -> 1.1368055555555594. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9939608134920673 -> 1.1368179563492102. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9939732142857182 -> 1.136830357142861. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.993985615079369 -> 1.136842757936512. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9939980158730198 -> 1.1368551587301627. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9940104166666707 -> 1.1368675595238136. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9940228174603215 -> 1.1368799603174644. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9940352182539723 -> 1.1368923611111152. Files amount: 8. Cur lvl list: 7
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9940476190476232 -> 1.136904761904766. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.994122023809528 -> 1.1369791666666709. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9941964285714328 -> 1.1370535714285757. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9942708333333375 -> 1.1371279761904804. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9943452380952423 -> 1.1372023809523852. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9944196428571471 -> 1.13727678571429. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9944940476190519 -> 1.1373511904761948. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9945684523809567 -> 1.1374255952380996. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9946428571428615 -> 1.1375000000000044. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9947172619047663 -> 1.1375744047619092. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9947916666666711 -> 1.137648809523814. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9948660714285759 -> 1.1377232142857188. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9949404761904806 -> 1.1377976190476236. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9950148809523854 -> 1.1378720238095283. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9950892857142902 -> 1.1379464285714331. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.995163690476195 -> 1.138020833333338. Files amount: 16. Cur lvl list: 5
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in subdir
+   DEBUG DiskAnalyzer: Process status: 0.9952380952380998 -> 1.1380952380952427. Files amount: 5. Cur lvl list: 2
+   TRACE DiskAnalyzer: Go in superdir
+   TRACE DiskAnalyzer: Go in superdir
+   DEBUG DiskAnalyzer: Finish! File: 'D:\1-Programming\1-Projects\Part1\BigProjects\Disk_scanner\..'. Size: 81 MB. Time: 514
+

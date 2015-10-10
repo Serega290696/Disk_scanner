@@ -2,7 +2,7 @@ import myProject.model.SettingsConstants;
 import org.junit.Test;
 
 /**
- * Created by serega on 21.09.2015.
+ * Created by serega.
  */
 public class TestJSONSettings {
     @Test

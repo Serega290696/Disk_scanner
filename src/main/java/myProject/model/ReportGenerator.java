@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.GregorianCalendar;
 
 /**
- * Created by serega on 19.09.2015.
+ * Created by serega.
  */
 public class ReportGenerator {
 
@@ -24,7 +24,7 @@ public class ReportGenerator {
     private DataWorker dataWorker = new DataWorker();
 
     private String HEADER_PATTERN = "===========================================================" + separator +
-            "================= Disk scanner saveReport =================" + separator +
+            "================= Disk scanner report =====================" + separator +
             "===========================================================" + separator +
             "Analyzed directory: %s" + separator +
             "Directory size: %s" + separator +
@@ -45,9 +45,7 @@ public class ReportGenerator {
 
     public void saveReport(DiskAnalyzer diskAnalyzer, boolean auto) {
         autoCreated = auto;
-//        System.out.println(autoGenerateReportName());
         fileWorker.write(autoGenerateReportName(), createReport(diskAnalyzer));
-//        fileWorker.write(autoGenerateReportName(), createReport(diskAnalyzer));
     }
 
 
@@ -66,8 +64,6 @@ public class ReportGenerator {
 
     private String createReport(DiskAnalyzer diskAnalyzer) {
         String report = diskAnalyzer.getReportString().toString();
-//        reportString.append((chosenFile.isFile() ? "File" : "Directory") + " size: " + dataWorker.convert(chosenFileSize));
-//        reportString.append("Time: " + (new Date().getTime() - bt));
         Object[] headerObjects = {
                 diskAnalyzer.getChosenFile(),
                 dataWorker.convert(diskAnalyzer.getChosenFileSize()),
@@ -81,16 +77,17 @@ public class ReportGenerator {
         String header = String.format(HEADER_PATTERN, headerObjects);
         String footer = String.format(FOOTER_PATTERN, footerObjects);
         if(report.length() > MAX_REPORT_SIZE)
-            report.substring(0, MAX_REPORT_SIZE);
+            report = report.substring(0, MAX_REPORT_SIZE);
         report = header + "\n" + report + "\n" + footer;
 
         return report;
     }
 
     private String autoCreated() {
-        if (autoCreated)
-            return "This report saved automatically.";
-        return "You created this report.";
+        return autoCreated
+                ?
+                "This report saved automatically.":
+                "You created this report.";
     }
 
     public void setReportFolder(File reportFolder) {
