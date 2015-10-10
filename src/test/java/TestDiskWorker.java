@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.Arrays;
 
 /**
- * Created by serega on 07.09.2015.
+ * Created by serega.
  */
 public class TestDiskWorker extends Assert {
     DiskWorker dw = new DiskWorker();

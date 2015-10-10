@@ -4,7 +4,7 @@ import org.junit.Test;
 import java.io.IOException;
 
 /**
- * Created by serega on 07.09.2015.
+ * Created by serega.
  */
 public class TestStartUpClass {
 

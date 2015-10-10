@@ -4,7 +4,7 @@ import myProject.model.ReportGenerator;
 import org.junit.Test;
 
 /**
- * Created by serega on 19.09.2015.
+ * Created by serega.
  */
 public class TestDoReport {
     @Test

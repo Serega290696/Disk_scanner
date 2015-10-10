@@ -2,12 +2,12 @@ import myProject.model.IncorrectFileSelected;
 import org.junit.Test;
 
 /**
- * Created by serega on 07.09.2015.
+ * Created by serega.
  */
 public class TestIncorrectFileSelected {
     @Test
     public void testName() throws Exception {
-
+        throw new IncorrectFileSelected();
     }
 
     @Test

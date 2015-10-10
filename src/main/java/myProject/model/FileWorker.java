@@ -1,15 +1,13 @@
 package myProject.model;
 
+import myProject.model.interfaces.IFileWorker;
+
 import java.io.*;
 
 /**
- * Created by serega on 08.09.2015.
+ * Created by serega.
  */
-public class FileWorker {
-
-    public String read(String fileName) {
-        return read(new File(fileName));
-    }
+public class FileWorker implements IFileWorker {
 
     public String read(File file) {
         StringBuilder sb = new StringBuilder();
@@ -36,8 +34,11 @@ public class FileWorker {
     public void write(File file, String dataWrite) {
         try {
             if (!file.exists()) {
-                new File(file.getAbsoluteFile().toString().substring(0, file.getAbsoluteFile().toString().lastIndexOf("\\"))).mkdirs();
-                file.createNewFile();
+                if(new File(file.getParent()).mkdirs()) {
+                    System.err.println("Error! File didn't create!");
+                    if (file.createNewFile())
+                        System.err.println("Error! File didn't create!");
+                }
             }
             OutputStreamWriter out = new OutputStreamWriter(
                     new FileOutputStream(
@@ -53,8 +54,4 @@ public class FileWorker {
         }
     }
 
-    public void write(String fileName, String dataWrite) {
-//        System.out.println("A");
-        write(new File(fileName), dataWrite);
-    }
 }

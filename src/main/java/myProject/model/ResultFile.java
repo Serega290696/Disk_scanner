@@ -16,7 +16,4 @@ public class ResultFile extends File implements Comparable<File>, Serializable {
         return finallySize;
     }
 
-//    public int compareTo(ResultFile o) {
-//        return (int) (finallySize - o.getFinallySize());
-//    }
 }

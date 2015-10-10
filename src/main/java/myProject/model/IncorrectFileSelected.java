@@ -1,7 +1,7 @@
 package myProject.model;
 
 /**
- * Created by serega on 07.09.2015.
+ * Created by serega.
  */
 public class IncorrectFileSelected extends Exception {
 

@@ -2,10 +2,10 @@ package myProject.view;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.image.Image;
 import javafx.stage.DirectoryChooser;
 import myProject.model.SettingsConstants;
 
@@ -14,43 +14,28 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-//import java.awt.*;
-
-/**
- * Created by serega on 08.09.2015.
- */
 public class OptionWinController implements Initializable {
     @FXML
     private CheckBox radioStartAppWithWin;
     @FXML
     private CheckBox radioStartAnalysisWithAppStart;
     @FXML
-    private Button buttonDefaultFolder;
-    @FXML
     private CheckBox radioSaveReportsAuto;
-    @FXML
-    private Button defaultReportsFolder;
-    @FXML
-    private Button buttonClearCash;
     @FXML
     private Slider sliderSize;
     @FXML
     private Slider sliderNumber;
-    @FXML
-    private Button saveButton;
-    @FXML
-    private Button cancelButton;
     @FXML
     private Label sliderSizeL;
     @FXML
     private Label sliderNumberL;
 
     private SettingsConstants SETTINGS = SettingsConstants.SETTINGS;
-    private File defAn = SETTINGS.getDEFAULT_ANALYZED_FOLDER_1();
-    private File defRep = SETTINGS.getDEFAULT_REPORTS_FOLDER_2();
+    private final String iconPath = "settings_icon.png";
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        MainWindowController.getOptionStage().getIcons().add(new Image("file:" + iconPath));
         radioStartAppWithWin.setSelected(SETTINGS.isSTART_APP_WITH_WINDOWS_7());
         radioStartAnalysisWithAppStart.setSelected(SETTINGS.isSTART_ANALYSIS_WITH_APP_START_3());
 
@@ -62,8 +47,11 @@ public class OptionWinController implements Initializable {
             radioStartAppWithWin.setSelected(true);
             radioStartAppWithWin.setDisable(true);
         }
+//        setOnCloseRequest(event -> {
+//                    mainPane.setDisable(false);
+//                    optionStage = null;
+//                };
         updateSliderL();
-//        System.out.println("IN CNTRL!");
     }
 
     @FXML
@@ -84,15 +72,11 @@ public class OptionWinController implements Initializable {
 
     @FXML
     public void clearCashAction() {
-        MainWindowController.getOptionStage().close();
+        exit();
     }
 
     @FXML
     public void saveAction() {
-
-
-//        SettingsConstants.setDefaultAnalyzedFolder1(radioStartAppWithWin.isSelected());
-//        SettingsConstants.setDefaultReportsFolder2(radioStartAppWithWin.isSelected());
         SETTINGS.setStartAnalysisWithAppStart3(radioStartAnalysisWithAppStart.isSelected());
         SETTINGS.setSaveReportsAutomatically4(radioSaveReportsAuto.isSelected());
         SETTINGS.setSliderSize5(sliderSize.getValue());
@@ -102,17 +86,18 @@ public class OptionWinController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        System.out.println("::: " + radioStartAppWithWin.isSelected());
 
-
-        MainWindowController.getOptionStage().close();
-//        MainWindowController.().setDisable(false);
+        exit();
     }
 
     @FXML
     public void cancelAction() {
+        exit();
+    }
+
+    private void exit() {
         MainWindowController.getOptionStage().close();
-//        MainWindowController.getMainPane().setDisable(false);
+        MainWindowController.setOptionStage(null);
     }
 
     @FXML
@@ -123,7 +108,6 @@ public class OptionWinController implements Initializable {
         dirChooser.setTitle("Open directory");
         File file = dirChooser.showDialog(null);
         if (file != null) {
-            defAn = file;
             SETTINGS.setDefaultAnalyzedFolder1(file);
         }
     }
@@ -136,7 +120,6 @@ public class OptionWinController implements Initializable {
         dirChooser.setTitle("Open directory");
         File file = dirChooser.showDialog(null);
         if (file != null) {
-            defAn = file;
             SETTINGS.setDefaultReportsFolder2(file);
         }
     }

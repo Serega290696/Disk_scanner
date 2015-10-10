@@ -27,7 +27,8 @@ public enum SettingsConstants {
     }};
 
     {
-        System.out.println(currentSettings.values());
+        if (LOGGER_SETTINGS.isTraceEnabled())
+            LOGGER_SETTINGS.trace(currentSettings.values());
         restoreSettings();
     }
 
@@ -65,9 +66,8 @@ public enum SettingsConstants {
     }
 
     public void setStartAppWithWindows(boolean START_APP_WITH_WINDOWS_7) throws IOException {
-        AddToStartUp util = new AddToStartUp();
-        if (!util.isAdded())
-            util.add();
+        if (!AddToStartUp.isAdded())
+            AddToStartUp.add();
         currentSettings.put("START_APP_WITH_WINDOWS_7", START_APP_WITH_WINDOWS_7);
         saveSettings();
     }
@@ -77,7 +77,6 @@ public enum SettingsConstants {
     }
 
     public File getDEFAULT_REPORTS_FOLDER_2() {
-//        return new File((String)null);
         return new File((String) currentSettings.get("DEFAULT_REPORTS_FOLDER_2"));
     }
 
@@ -102,7 +101,9 @@ public enum SettingsConstants {
         return (boolean) currentSettings.get("START_APP_WITH_WINDOWS_7");
     }
 
+    @SuppressWarnings("unchecked")
     public void saveSettings() {
+        LOGGER_SETTINGS.info("Try save settings");
         JSONObject ob = new JSONObject(
                 new HashMap<
                         String,
@@ -114,9 +115,12 @@ public enum SettingsConstants {
         ob.put("Current_settings", currentSettings);
         fw = new FileWorker();
         fw.write(CONFIG_FILE, ob.toJSONString());
+        LOGGER_SETTINGS.info("Successful save settings!");
     }
 
+    @SuppressWarnings("unchecked")
     public void restoreSettings() {
+        LOGGER_SETTINGS.info("Try restore settings");
         JSONParser parser = new JSONParser();
         fw = new FileWorker();
         try {
@@ -126,7 +130,9 @@ public enum SettingsConstants {
             }
             JSONObject ob = (JSONObject) parser.parse(fw.read(CONFIG_FILE));
             this.currentSettings = (HashMap<String, Object>) ob.get("Current_settings");
+            LOGGER_SETTINGS.info("Successful restore settings!");
         } catch (ParseException e) {
+            LOGGER_SETTINGS.error("Failed restore settings!");
             e.printStackTrace();
         }
     }

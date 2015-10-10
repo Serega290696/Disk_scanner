@@ -3,7 +3,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 
 /**
- * Created by serega on 20.09.2015.
+ * Created by serega.
  */
 public class TestLogger {
 
